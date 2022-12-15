@@ -12,7 +12,7 @@ header {
 
 .header-left {
     float: left;
-    width: 616px;
+    width: 45%;
     height: 600px;
     left: 0px;
     top: 0px;
@@ -108,7 +108,7 @@ header {
 
 .header-right {
     float: left;
-    width: 664px;
+    width: 55%;
     height: 600px;
     left: 616px;
     top: 0px;
