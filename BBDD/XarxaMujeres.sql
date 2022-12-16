@@ -27,3 +27,20 @@ create table `ProffesionalOrientation`(
 	primary key (`Associated`, `ModifiedTime`),
     foreign key (`Associated`) references Associated(`ID`)
 );
+create table `Employee`(
+	`Name` varchar(45) not null,
+    `Password` varchar(45) not null,
+    `Address` varchar(45) not null,
+    `BirthDate` datetime not null,
+    `Profile/Position` varchar(45) not null,
+    `Photo` mediumblob not null,
+    `DL` varchar(45) not null,
+    `PersonalVehicle` varchar(45) not null,
+    `SelfEmployedDisplacement` boolean not null,
+    `Adaptations` mediumblob not null,
+    `Loc`varchar(45),
+    `Prov`varchar(45),
+    `ID`integer auto_increment,
+    primary key(`ID`)
+
+);
