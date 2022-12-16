@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flexbox;
+}
+
+.header-left {
+    float: left;
+    width: 45%;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    background: #F9F4E8;
+}
+
+.header-left>div {
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 3%;
+    height: 100%;
+}
+#logo{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items:flex-start;
+}
+
+#title{
+    display: flex;
+    width: 100%;
+    height: 27%;
+    align-items:flex-start;
+    font-family: 'IBM Plex Serif',sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: lighter;
+    color: #000000;
+}
+#title h1{
+    margin: 0;
+}
+
+#description{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    font-family: 'Inter';
+    font-style: normal;
+    align-items: center;
+}
+#description p{
+    margin: 0;
+}
+
+#button{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+}
+
+#socials{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+}
+
+.header-left button {
+    width: 219px;
+    height: 74px;
+    left: 59px;
+    top: 549px;
+    background: #D43474;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+
+}
+.header-left ul {
+    display: table;
+    width: 100%;
+}
+.header-left li {
+    display: table-cell;
+}
+
+.header-left li a {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #595959;
+    text-decoration: none;
+}
+
+.header-right {
+    float: left;
+    width: 55%;
+    height: 600px;
+    left: 616px;
+    top: 0px;
+    background: #D43474;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.header-right li {
+    display: inline;
+}
+
+.header-right li a {
+
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+}
+nav ul {
+    display: table;
+    width: 100%;
+}
+nav li {
+    display: table-cell;
+}
+#lndng_img{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 0px 0px 0px 10px;
+}
+.cleaner {
+    clear: both;
+}
