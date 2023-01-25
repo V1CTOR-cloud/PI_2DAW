@@ -57,15 +57,17 @@ CREATE TABLE `Activities`(
 	`duration` INT(3) NOT NULL,
 	`startDate` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	`endDate` TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
+   FOREIGN KEY(`owner`) REFERENCES Employee(`ID`),
 	PRIMARY KEY(`id_act`)
 );
 
 CREATE TABLE `Owners_activities`(
-	`emp_id` INT NOT NULL,
+	`Associated` VARCHAR(45) NOT NULL,
 	`act_id` INT NOT NULL,
-	FOREIGN KEY(emp_id) REFERENCES Employee(`ID`),
+	FOREIGN KEY(`Associated`) REFERENCES Associated(`ID`),
 	FOREIGN KEY(act_id) REFERENCES Activities(`id_act`),
-	UNIQUE(emp_id, act_id)
+	UNIQUE(`Associated`, act_id)
 );
+
 
 
