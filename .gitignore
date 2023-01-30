@@ -2,6 +2,3 @@
 ###> BBDD GITIGNORE ###
 /API/
 ###< BBDD GITIGNORE ###
-###> APP GITIGNORE ###
-/Xarxamujeres/
-###< APP GITIGNORE ###
