@@ -33,10 +33,14 @@ class Employee
     #[ORM\OneToMany(mappedBy: 'Employee', targetEntity: Files::class)]
     private Collection $files;
 
+    #[ORM\OneToMany(mappedBy: 'Author', targetEntity: Remarks::class)]
+    private Collection $remarks;
+
     public function __construct()
     {
         $this->sessions = new ArrayCollection();
         $this->files = new ArrayCollection();
+        $this->remarks = new ArrayCollection();
     }
 
     public function getEmail(): ?string
@@ -153,6 +157,36 @@ class Employee
             // set the owning side to null (unless already changed)
             if ($file->getEmployee() === $this) {
                 $file->setEmployee(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Remarks>
+     */
+    public function getRemarks(): Collection
+    {
+        return $this->remarks;
+    }
+
+    public function addRemark(Remarks $remark): self
+    {
+        if (!$this->remarks->contains($remark)) {
+            $this->remarks->add($remark);
+            $remark->setAuthor($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRemark(Remarks $remark): self
+    {
+        if ($this->remarks->removeElement($remark)) {
+            // set the owning side to null (unless already changed)
+            if ($remark->getAuthor() === $this) {
+                $remark->setAuthor(null);
             }
         }
 

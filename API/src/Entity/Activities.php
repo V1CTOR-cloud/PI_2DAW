@@ -28,6 +28,9 @@ class Activities
     #[ORM\Column(length: 45)]
     private ?string $category = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $comment = null;
+
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $startdate = null;
 
@@ -49,6 +52,18 @@ class Activities
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getComment(): ?string
+    {
+        return $this->comment;
+    }
+
+    public function setComment(string $comment): self
+    {
+        $this->comment = $comment;
+
+        return $this;
     }
 
     public function getName(): ?string

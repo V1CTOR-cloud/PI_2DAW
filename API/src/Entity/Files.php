@@ -12,6 +12,7 @@ class Files
     #[ORM\Column(length: 45)]
     private ?string $Name = null;
 
+    #[ORM\Id]
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $Date = null;
 
@@ -23,7 +24,7 @@ class Files
     #[ORM\JoinColumn(nullable: false, referencedColumnName:'email')]
     private ?Employee $Employee = null;
 
-    #[ORM\Id]
+
     #[ORM\ManyToOne(inversedBy: 'files')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Associated $Referred = null;
