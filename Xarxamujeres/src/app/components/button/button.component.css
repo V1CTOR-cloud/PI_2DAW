@@ -1,0 +1,46 @@
+#signIn {
+    width: 320px;
+    height: 50px;
+    border: 0;
+    background: #D43474;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+#signUp {
+    width: 320px;
+    height: 50px;
+    border: 0;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #9A62A6;
+}
+
+#continue {
+    color: #FFFFFF;
+    background: #9A62A6;
+    height: 50px;
+    width: 332px;
+    left: 85px;
+    top: 540px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#button3 {
+    height: 70px;
+    width: 70px;
+}
