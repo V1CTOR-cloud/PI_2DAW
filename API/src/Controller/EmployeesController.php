@@ -16,16 +16,11 @@ class EmployeesController extends AbstractController
         $results = $entityManager->getRepository(Employee::class)->findAll();
         $data = [];
         foreach ($results as $employee) {
-
-            // $char = explode(' ', $employee->getPhoto());
-            // $userStr = '';
-            // foreach($char as $ch) 
-            // $userStr .= chr(bindec($ch));
-
             $data[] = [
                 'EMAIL'=>$employee->getEmail(),
                 'NAME' => $employee->getName(),
-                'PROFILE'=> $employee->getProfile()
+                'PROFILE'=> $employee->getProfile(),
+                'IMAGE'=> $employee->getPhoto()
             ];
         }
         return $this->json($data);

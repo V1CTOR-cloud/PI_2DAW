@@ -9,8 +9,8 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: SessionRepository::class)]
 class Session
 {
-    #[ORM\Column(type: Types::BLOB)]
-    private $File = null;
+    #[ORM\Column(length: 255)]
+    private ?string $File = null;
 
     #[ORM\Column(length: 45)]
     private ?string $Type = null;
@@ -34,12 +34,12 @@ class Session
     #[ORM\JoinColumn(nullable: false, referencedColumnName:'email')]
     private ?Employee $Author = null;
 
-    public function getFile()
+    public function getFile(): ?string
     {
         return $this->File;
     }
 
-    public function setFile($File): self
+    public function setFile(string $File): self
     {
         $this->File = $File;
 

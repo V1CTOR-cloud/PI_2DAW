@@ -22,8 +22,8 @@ class Activities
     #[ORM\Column(length: 45)]
     private ?string $status = null;
 
-    #[ORM\Column(type: Types::BLOB)]
-    private $photo = null;
+    #[ORM\Column(length: 255)]
+    private ?string $photo = null;
 
     #[ORM\Column(length: 45)]
     private ?string $category = null;
@@ -75,12 +75,12 @@ class Activities
         return $this;
     }
 
-    public function getPhoto()
+    public function getPhoto(): ?string
     {
         return $this->photo;
     }
 
-    public function setPhoto($photo): self
+    public function setPhoto(string $photo): self
     {
         $this->photo = $photo;
 

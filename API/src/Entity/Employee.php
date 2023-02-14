@@ -24,8 +24,8 @@ class Employee
     #[ORM\Column(length: 45)]
     private ?string $Profile = null;
 
-    #[ORM\Column(type: Types::BLOB)]
-    private $Photo = null;
+    #[ORM\Column(length: 255)]
+    private ?string $Photo = null;
 
     #[ORM\OneToMany(mappedBy: 'Author', targetEntity: Session::class)]
     private Collection $sessions;
@@ -87,12 +87,12 @@ class Employee
         return $this;
     }
 
-    public function getPhoto()
+    public function getPhoto(): ?string
     {
         return $this->Photo;
     }
 
-    public function setPhoto($Photo): self
+    public function setPhoto(string $Photo): self
     {
         $this->Photo = $Photo;
 

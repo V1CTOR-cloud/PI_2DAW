@@ -22,8 +22,8 @@ class Associated
     #[ORM\Column(length: 45)]
     private ?string $Name = null;
 
-    #[ORM\Column(type: Types::BLOB)]
-    private $Photo = null;
+    #[ORM\Column(length: 255)]
+    private ?string $Photo = null;
 
     #[ORM\Column(nullable: true)]
     private ?int $PC = null;
@@ -94,12 +94,12 @@ class Associated
         return $this;
     }
 
-    public function getPhoto()
+    public function getPhoto(): ?string
     {
         return $this->Photo;
     }
 
-    public function setPhoto($Photo): self
+    public function setPhoto(string $Photo): self
     {
         $this->Photo = $Photo;
 

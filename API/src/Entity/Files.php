@@ -15,6 +15,9 @@ class Files
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $Date = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $File = null;
+
     #[ORM\Id]
     #[ORM\ManyToOne(inversedBy: 'files')]
     #[ORM\JoinColumn(nullable: false, referencedColumnName:'email')]
@@ -33,6 +36,18 @@ class Files
     public function setName(string $Name): self
     {
         $this->Name = $Name;
+
+        return $this;
+    }
+
+    public function getFile(): ?string
+    {
+        return $this->File;
+    }
+
+    public function setFile(string $File): self
+    {
+        $this->File = $File;
 
         return $this;
     }
