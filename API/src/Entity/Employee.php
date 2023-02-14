@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Employee
 {
     #[ORM\Id]
-    #[ORM\Column(length: 45)]
+    #[ORM\Column(length: 45, name:'email')]
     private ?string $Email = null;
 
     #[ORM\Column(length: 45)]

@@ -17,7 +17,7 @@ class Files
 
     #[ORM\Id]
     #[ORM\ManyToOne(inversedBy: 'files')]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(nullable: false, referencedColumnName:'email')]
     private ?Employee $Employee = null;
 
     #[ORM\Id]

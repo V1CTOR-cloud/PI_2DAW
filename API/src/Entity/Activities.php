@@ -13,7 +13,7 @@ class Activities
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column(name:'id')]
     private ?int $id = null;
 
     #[ORM\Column(length: 45)]
@@ -34,8 +34,8 @@ class Activities
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $enddate = null;
 
-    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\OneToOne(targetEntity:Employee::class)]
+    #[ORM\JoinColumn(nullable: false, referencedColumnName:'email')]
     private ?Employee $Owner = null;
 
     #[ORM\ManyToMany(targetEntity: Associated::class, inversedBy: 'activities')]

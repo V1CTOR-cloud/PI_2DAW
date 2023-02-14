@@ -31,6 +31,7 @@ class Session
 
     #[ORM\Id]
     #[ORM\ManyToOne(inversedBy: 'sessions')]
+    #[ORM\JoinColumn(nullable: false, referencedColumnName:'email')]
     private ?Employee $Author = null;
 
     public function getFile()
