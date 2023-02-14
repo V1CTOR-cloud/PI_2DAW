@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Xarxamujeres": {
+    "XarxaMujeres": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/xarxamujeres",
+            "outputPath": "dist/xarxa-mujeres",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Xarxamujeres:build:production"
+              "browserTarget": "XarxaMujeres:build:production"
             },
             "development": {
-              "browserTarget": "Xarxamujeres:build:development"
+              "browserTarget": "XarxaMujeres:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Xarxamujeres:build"
+            "browserTarget": "XarxaMujeres:build"
           }
         },
         "test": {
