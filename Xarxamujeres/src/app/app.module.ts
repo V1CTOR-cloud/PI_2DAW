@@ -10,6 +10,7 @@ import { InputComponent } from './components/input/input.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { AssociatedComponent } from './Views/associated/associated.component';
 import { SignupconfirmComponent } from './Views/signupconfirm/signupconfirm.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SignupconfirmComponent } from './Views/signupconfirm/signupconfirm.comp
     CarrouselComponent,
     AssociatedComponent,
     SignupconfirmComponent,
+    HeaderComponent,
     
   ],
   imports: [
