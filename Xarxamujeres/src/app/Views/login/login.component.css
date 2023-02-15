@@ -119,10 +119,13 @@
     font-size: 18px;
     line-height: 22px;
 }
+.row{
+    height: 100%;
+}
 
 #carrousel {
     background-size: auto;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     background: var(--background);
 }
