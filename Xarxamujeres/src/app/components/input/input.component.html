@@ -1,5 +1,7 @@
 <div [ngSwitch]="type" id="box_input">
     <input *ngSwitchCase="'email'" id="email" type="email" placeholder="Email">
     <input *ngSwitchCase="'password'" id="password" type="password" placeholder="Password">
+    <input *ngSwitchCase="'confirmPassword'" id="confirmPassword" type="text" placeholder="Confirm Password">
     <input *ngSwitchCase="'name'" id="name" type="text" placeholder="Full name">
+
 </div>

@@ -164,3 +164,14 @@
     border-top: 6px solid #333;
     pointer-events: none;
 }
+
+select {
+    background: #F9F4E8;
+    font-family: 'Montserrat';
+    font-style: normal;
+    border: 1px solid black;
+    font-size: 18px;
+    height: 40px;
+    padding: 5px;
+    width: 330px;
+}

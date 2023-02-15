@@ -9,3 +9,14 @@ body {
     width: 100%;
     height: 100%;
 }
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: #D43474;
+}
+
+ ::selection {
+    color: white;
+    background: #D43474;
+}

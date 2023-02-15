@@ -15,8 +15,8 @@
                                 <div class="col-12">
                                     <app-input [type]="name"></app-input>
                                     <app-input [type]="email"></app-input>
-                                    <select class="custom-select">
-                                        <option selected>Job</option>
+                                    <select class="form-select">
+                                        <option selected ><p id="job">Job</p></option>
                                         <option value="1">Psychologist</option>
                                         <option value="2">Xarxa Technician</option>
                                         <option value="3">Administrative Technician</option>
@@ -25,7 +25,6 @@
                                         <option value="3">Lawyer</option>
                                         <option value="3">Volunteer</option>
                                     </select>
-
                                 </div>
                             </div>
                         </div>
@@ -34,7 +33,7 @@
                         <div class="container-fluid p-0" id="btn_box">
                             <div class="row p-0">
                                 <div class="col-12 p-0">
-                                    <app-button [type]="continueBtn" [routerLink]=""></app-button>
+                                    <app-button [type]="continueBtn" [routerLink]="['/confirm']"></app-button>
                                     <div id="separator">
                                         <hr id="line">
                                         <h3>OR</h3>
@@ -54,7 +53,7 @@
             <!-- <app-button [type]="signUpBtn"></app-button>
             <app-button [type]="continueBtn"></app-button> -->
         </div>
-        <div class="col-xl-7 d-none d-xl-block" id="carrousel">
+        <div class="col-xl-7 d-none d-xl-block" style="padding-top:20px" id="carrousel">
             <app-carrousel></app-carrousel>
         </div>
     </div>

@@ -5,16 +5,16 @@
                 <div class="row">
                     <div class="col-12" id="header_info">
                         <img src="../../../assets/logo.png" alt="logo" id="logo">
-                        <h1 class="display-3">Welcome back</h1>
-                        <p>Good to see you back 👋 </p>
+                        <h1 class="display-3">Create Account</h1>
+                        <p>Almost there 🤏 </p>
                     </div>
                     <div class="col-12 p-0" id="body_info">
                         <!-- Inputs -->
                         <div class="container-fluid p-0" id="input_box">
                             <div class="row">
                                 <div class="col-12">
-                                    <app-input></app-input>
-                                    <app-input></app-input>
+                                    <app-input [type]="passwordInput"></app-input>
+                                    <app-input [type]="confirmPasswordInput"></app-input>
                                 </div>
                             </div>
                         </div>
@@ -23,13 +23,13 @@
                         <div class="container-fluid p-0" id="btn_box">
                             <div class="row p-0">
                                 <div class="col-12 p-0">
-                                    <app-button [type]="signInBtn"></app-button>
+                                    <app-button [type]="signUpBtn"></app-button>
                                     <div id="separator">
                                         <hr id="line">
                                         <h3>OR</h3>
                                         <hr id="line">
                                     </div>
-                                    <app-button></app-button>
+                                    <app-button [type]="signInBtn"></app-button>
                                 </div>
                             </div>
                         </div>

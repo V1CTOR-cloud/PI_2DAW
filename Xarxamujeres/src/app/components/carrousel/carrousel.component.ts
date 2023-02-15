@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./carrousel.component.css']
 })
 export class CarrouselComponent {
-
+  public leftArrowBtn = 'leftArrow';
+  public rightArrowBtn = 'rightArrow';  
 }
