@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SignUpComponent {
 
+  public signInBtn: string = "signIn";
+  public continueBtn : string = "continue";
+
+  public email: string = "email";
+  public name: string = "name";
 }
+

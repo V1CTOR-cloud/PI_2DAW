@@ -1,9 +1,10 @@
 #img {
-    height: 90%;
+    height: 98%;
     filter: drop-shadow(5px 5px 13px rgba(220, 220, 209, 0.9));
     border-radius: 30px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url('https://images.pexels.com/photos/9258459/pexels-photo-9258459.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: cover; */
 }

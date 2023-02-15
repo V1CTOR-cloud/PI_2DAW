@@ -8,6 +8,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { SignUpComponent } from './Views/sign-up/sign-up.component';
 import { InputComponent } from './components/input/input.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
+import { AssociatedComponent } from './Views/associated/associated.component';
+import { SignupconfirmComponent } from './Views/signupconfirm/signupconfirm.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
     SignUpComponent,
     InputComponent,
     CarrouselComponent,
+    AssociatedComponent,
+    SignupconfirmComponent,
     
   ],
   imports: [

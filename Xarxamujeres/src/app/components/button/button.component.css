@@ -1,3 +1,11 @@
+:root {
+    --background: #F9F4E8;
+    --custom_black: #1e1e1e;
+    --primary: #D43474;
+    --secondary: #9A62A6;
+    --gray: #D9D9D9;
+}
+
 #signIn {
     width: 320px;
     height: 50px;
@@ -13,10 +21,9 @@
 }
 
 #signUp {
+    border: 1px solid #1e1e1e36;
     width: 320px;
     height: 50px;
-    border: 0;
-    background: #FFFFFF;
     border-radius: 10px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -24,6 +31,15 @@
     font-size: 24px;
     line-height: 29px;
     color: #9A62A6;
+    background: transparent;
+    background-image: url('https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871');
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+#signUp:hover {
+    background-position: center;
 }
 
 #continue {
@@ -40,7 +56,14 @@
     line-height: 29px;
 }
 
-#button3 {
+#leftArrow {
+    background: #9A62A6;
+    height: 70px;
+    width: 70px;
+}
+
+#rightArrow {
+    background: #D43474;
     height: 70px;
     width: 70px;
 }

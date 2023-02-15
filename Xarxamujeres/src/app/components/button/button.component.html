@@ -2,16 +2,16 @@
     <button *ngSwitchCase='"signIn"' id="signIn">
         Sign In
     </button>
-    <button *ngSwitchCase='"signUp"' id="signUp">
+    <button *ngSwitchCase='"signUp"' id="signUp" [routerLink]="['/signup']">
         Sign Up
     </button>
     <button *ngSwitchCase='"continue"' id="continue">
         Continue
     </button>
-    <button *ngSwitchCase='"four"' id="button3">
+    <button *ngSwitchCase='"leftArrow"' id="button3">
         <!-- Aqui va la la flecha izquierda  -->
     </button>
-    <button *ngSwitchCase='"five"' id="button3">
+    <button *ngSwitchCase='"rightArrow"' id="button3">
         <!-- Aqui va la flecha derecha -->
     </button>
 </div>
