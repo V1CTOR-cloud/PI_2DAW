@@ -11,6 +11,8 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { AssociatedComponent } from './Views/associated/associated.component';
 import { SignupconfirmComponent } from './Views/signupconfirm/signupconfirm.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+
 
 
 @NgModule({
@@ -24,6 +26,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     AssociatedComponent,
     SignupconfirmComponent,
     SidebarComponent,
+    HeaderComponent,
     
   ],
   imports: [
