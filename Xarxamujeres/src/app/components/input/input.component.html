@@ -3,6 +3,9 @@
     <input *ngSwitchCase="'password'" id="password" type="password" placeholder="Password">
     <input *ngSwitchCase="'confirmPassword'" id="confirmPassword" type="text" placeholder="Confirm Password">
     <input *ngSwitchCase="'name'" id="name" type="text" placeholder="Full name">
-    <input *ngSwitchCase="'searchInput'" id="searchInput" type="text" placeholder="Search Activity">
+    <div *ngSwitchCase="'searchInput'" id="searchIcon">
+        <img src="../../assets/search.png" alt="searchIcon" />
+        <input id="searchInput" type="text" placeholder="Search Activity">
+    </div>
 
 </div>

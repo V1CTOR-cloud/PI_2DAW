@@ -1,13 +1,40 @@
 <app-header [moduleTitle]="moduleTitle"></app-header>
+<div class="container-fluid p-0">
+    <div class="row me-0">
+        <div class="col-2 bg-light d-none d-lg-block p-0">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-10 p-0 ps-3 pe-3 pt-0">
+            <div class="container-fluid">
+                <div class="col-12 p-0" id="main">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <app-input [type]="'searchInput'"></app-input>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h2>Showing <span>{{activitiesLength}}</span> Activities</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid p-0" id="activities_cols">
 
-<app-sidebar></app-sidebar>
-<div class="container-fluid p-0" style="float: left;">
-    <!-- <div class="row">
-        <div class="col-12">
-            <app-input [type]="searchInput"></app-input>
-            <h1>Showing <span>{{activitiesLength}}</span> Activities</h1>
+                        <div class="row">
+                            <div class="col-4">
+                                a
+                                <!-- <app-activities-card></app-activities-card> -->
+                            </div>
+                            <div class="col-4">
+                                a
+                                <!-- <app-activities-card></app-activities-card> -->
+                            </div>
+                            <div class="col-4">
+                                a
+                                <!-- <app-activities-card></app-activities-card> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <h1>Events</h1> -->
-    <!-- <app-activities-card [emoji]="'🎉'"></app-activities-card> -->
-</div>

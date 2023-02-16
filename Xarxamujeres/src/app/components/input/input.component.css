@@ -17,3 +17,17 @@ textarea:focus,
 input:focus {
     outline: none;
 }
+
+#searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+#searchIcon img {
+    height: 60%;
+}

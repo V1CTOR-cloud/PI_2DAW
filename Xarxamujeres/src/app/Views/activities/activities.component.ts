@@ -10,8 +10,6 @@ export class ActivitiesComponent {
   public cardActivity : string = 'cardActivity';
   public activitiesLength: number = 54;
 
-  public searchInput: string = 'searchInput';
-
   public emojiCard:string = '🎉';
   
 }

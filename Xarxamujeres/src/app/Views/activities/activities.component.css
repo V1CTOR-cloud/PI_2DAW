@@ -1,3 +1,10 @@
 span {
     color: #d43474;
 }
+
+#activities_cols {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lavender;
+}
