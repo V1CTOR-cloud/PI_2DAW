@@ -2,29 +2,42 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-radius: 10px;
-    border-style: hidden; /* hide standard table (collapsed) border */
-    box-shadow: 0 0 0 1px black; /* this draws the table border  */ 
+    border-style: hidden;
+    /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #1e1e1e35;
+    /* this draws the table border  */
 }
 
-table *{
+table * {
     padding: 1em;
 }
-table tbody tr:first-child th {
-    border-right: 1px solid black;
+
+span {
+    color: #D43474;
 }
+
+table tbody tr:first-child th {
+    border-right: 1px solid #1e1e1e35;
+}
+
 
 /* Apply a border to the right of all but the last column */
+
 table td:not(:last-child) {
-    border-right: 1px solid black;
+    border-right: 1px solid #1e1e1e35;
 }
 
+
 /* Apply a border to the bottom of all but the last row */
+
 table tbody tr:not(:last-child) {
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid #1e1e1e35 !important;
 }
-#handler th:first-child{
+
+#handler th:first-child {
     text-align: start;
-}   
-#handler th:last-child{
+}
+
+#handler th:last-child {
     text-align: end;
 }
