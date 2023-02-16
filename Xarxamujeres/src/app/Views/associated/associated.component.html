@@ -4,7 +4,7 @@
         <div class="col-2 d-none d-lg-block ps-0">
             <app-sidebar></app-sidebar>
         </div>
-        <div class="col-lg-10 col-md-12 pe-0 ps-0 ms-0 me-0">
+        <div class="col-10 p-0">
             <div class="container-fluid">
                 <div class="row pb-3">
                     <h3><span> {{associatedLenght}} </span> Associated</h3>
@@ -18,8 +18,8 @@
                     </div>
 
                 </div>
-                <div class="row pt-3 pb-3">
-                    <app-table></app-table>
+                <div class="row pb-3">
+                    <app-table [associateLength]="associatedLenght"></app-table>
                 </div>
             </div>
         </div>

@@ -1,8 +1,11 @@
 <table>
     <thead>
         <tr id="handler">
-            <th colspan="3">SEARCHBAR</th>
-            <th colspan="1">Showing <span>{{associateLength}}</span> results</th>
+            <!-- <th colspan="2">Showing 562 results</th> -->
+            <th colspan="2">
+                <app-input [type]="'tableSearchInput'"></app-input>
+            </th>
+            <th colspan="2">Showing <span> {{ associateLength }} </span> results</th>
         </tr>
     </thead>
     <tbody>

@@ -3,6 +3,25 @@
     width: 40px;
 }
 
-filter: invert(55%) sepia(39%) saturate(6339%) hue-rotate(162deg) brightness(96%) contrast(101%);
-filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(300deg) saturate(200%);
-filter: invert(54%) sepia(82%) saturate(6361%) hue-rotate(316deg) brightness(87%) contrast(90%);
+li:hover{
+    border-left: 3px solid #d43474;
+}
+
+li:hover i{
+    filter: invert(31%) sepia(29%) saturate(4073%) hue-rotate(308deg) brightness(90%) contrast(92%);
+}
+
+a{
+    color: black;
+}
+
+li:hover a{
+    transition: none;
+    color: #d43474;
+}
+
+li{
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
+}
