@@ -17,7 +17,35 @@ body {
     background: #D43474;
 }
 
- ::selection {
+::selection {
     color: white;
-    background: #D43474;
+    background: #d9d9d9;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #D4347465;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D4347490;
 }

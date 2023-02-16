@@ -3,35 +3,35 @@
         <li>
             <a href="#" class="nav-link align-middle px-0">
                 <i class="fs-4 bi-house">
-                        <img src="../../assets/dashboard.png" alt="calendarIcon" id="icon" />
-                    </i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                    <img src="../../assets/dashboard.png" alt="calendarIcon" id="icon" />
+                </i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
             </a>
         </li>
-        <li>
-            <a href="#" class="nav-link align-middle px-0">
+        <li class="nav-item">
+            <a [routerLink]="['/associated']" class="nav-link align-middle px-0">
                 <i class="fs-4 bi-house">
-                        <img src="../../assets/partners.png" alt="calendarIcon" id="icon" />
-                    </i> <span class="ms-1 d-none d-sm-inline">Partners</span>
+                    <img src="../../assets/partners.png" alt="calendarIcon" id="icon" />
+                </i> <span class="ms-1 d-none d-sm-inline">Associated</span>
             </a>
         </li>
         <li>
-            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+            <a [routerLink]="['/activities']" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                 <i class="fs-4 bi-speedometer2">
-                        <img src="../../assets/activities.png" alt="calendarIcon" id="icon" />
-                </i> 
-                <span class="ms-1 d-none d-sm-inline">Activities</span> 
+                    <img src="../../assets/activities.png" alt="calendarIcon" id="icon" />
+                </i>
+                <span class="ms-1 d-none d-sm-inline">Activities</span>
             </a>
         </li>
         <li>
             <a href="#" class="nav-link px-0 align-middle">
                 <i class="fs-4 bi-table">
-                        <img src="../../assets/folder.png" alt="calendarIcon" id="icon" />
-                </i> 
+                    <img src="../../assets/folder.png" alt="calendarIcon" id="icon" />
+                </i>
                 <span class="ms-1 d-none d-sm-inline">Files</span>
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link px-0 align-middle">
+            <a href="#" class="nav-link px-0 align-middle disabled">
                 <i class="fs-4 bi-table">
                     <img src="../../assets/calendar.png" alt="calendarIcon" id="icon" />
                 </i>

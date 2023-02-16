@@ -7,4 +7,19 @@ span {
     align-items: center;
     justify-content: space-evenly;
     background-color: lavender;
+    /* height: 80vh; */
+}
+
+#columna {
+    font-family: 'Montserrat';
+    background-color: lightgreen;
+}
+
+#debugger {
+    background-color: lawngreen;
+}
+
+#line {
+    height: 1px;
+    border: 0.5px solid #1e1e1e35;
 }

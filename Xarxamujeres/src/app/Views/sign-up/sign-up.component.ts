@@ -12,5 +12,6 @@ export class SignUpComponent {
 
   public email: string = "email";
   public name: string = "name";
+
 }
 
