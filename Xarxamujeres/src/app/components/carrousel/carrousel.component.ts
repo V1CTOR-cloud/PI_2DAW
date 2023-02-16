@@ -14,9 +14,9 @@ export class CarrouselComponent {
   @Output() img = new EventEmitter<string>();
 
   public list: {case: string, img: string; }[] = [
-    {case: 'one',  img: "https://i.blogs.es/2cc78a/ordenstarwars/840_560.jpg"},
-    {case: 'two',  img: "https://lumiere-a.akamaihd.net/v1/images/starwars_e58d682b.png"},
-    {case: 'three', img: "https://www.lavanguardia.com/files/image_948_465/uploads/2020/05/04/5fa922920d3b5.png"}
+    {case: 'one',  img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
+    {case: 'two',  img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
+    {case: 'three', img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}
   ];
   case: string = 'one';
 

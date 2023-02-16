@@ -2,24 +2,7 @@
     height: 40px;
     width: 40px;
 }
-li:hover{
-    border-left: 3px solid pink;
-}
 
-li:hover i{
-    filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(300deg) saturate(200%);
-}
-
-a{
-    color: black;
-}
-
-li:hover a{
-    transition: none;
-    color: pink;
-}
-
-li{
-    padding-left: 1em;
-    margin-bottom: 2em;
-}
+filter: invert(55%) sepia(39%) saturate(6339%) hue-rotate(162deg) brightness(96%) contrast(101%);
+filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(300deg) saturate(200%);
+filter: invert(54%) sepia(82%) saturate(6361%) hue-rotate(316deg) brightness(87%) contrast(90%);
