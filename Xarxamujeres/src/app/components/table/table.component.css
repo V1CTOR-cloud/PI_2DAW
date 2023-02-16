@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px black; /* this draws the table border  */ 
+}
+
+table *{
+    padding: 1em;
+}
+table tbody tr:first-child th {
+    border-right: 1px solid black;
+}
+
+/* Apply a border to the right of all but the last column */
+table td:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+/* Apply a border to the bottom of all but the last row */
+table tbody tr:not(:last-child) {
+    border-bottom: 1px solid black !important;
+}
+#handler th:first-child{
+    text-align: start;
+}   
+#handler th:last-child{
+    text-align: end;
+}
