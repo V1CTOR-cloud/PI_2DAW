@@ -1,6 +1,6 @@
 # PI_2DAW
 Integrated project of team 2 carried out for the association Xarxa Dones. 
-<p align="center"><img src="[https://apexcharts.com/media/apexcharts-logo.png](https://xarxamujeres.es/wp-content/uploads/2020/11/cropped-logo_transparent-e1604408567517.png)"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/V1CTOR-cloud/PI_2DAW/main/logo.jpeg"></p>
 
 
 We have created an application so that workers can work efficiently and in a more orderly manner, as well as improving its design by making it more accessible to everyone. 
