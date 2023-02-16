@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./associated.component.css']
 })
 export class AssociatedComponent {
-
+  public moduleTitle:string = 'Associated 🤝';
 }

@@ -13,6 +13,8 @@ import { SignupconfirmComponent } from './Views/signupconfirm/signupconfirm.comp
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TableComponent } from './components/table/table.component';
+import { ActivitiesCardComponent } from './components/activities-card/activities-card.component';
+import { ActivitiesComponent } from './Views/activities/activities.component';
 
 
 
@@ -29,6 +31,8 @@ import { TableComponent } from './components/table/table.component';
     SidebarComponent,
     HeaderComponent,
     TableComponent,
+    ActivitiesCardComponent,
+    ActivitiesComponent,
     
   ],
   imports: [
