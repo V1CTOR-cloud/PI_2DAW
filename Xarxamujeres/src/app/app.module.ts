@@ -12,6 +12,7 @@ import { AssociatedComponent } from './Views/associated/associated.component';
 import { SignupconfirmComponent } from './Views/signupconfirm/signupconfirm.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { TableComponent } from './components/table/table.component';
 import { ActivitiesCardComponent } from './components/activities-card/activities-card.component';
 import { ActivitiesComponent } from './Views/activities/activities.component';
 
@@ -29,6 +30,7 @@ import { ActivitiesComponent } from './Views/activities/activities.component';
     SignupconfirmComponent,
     SidebarComponent,
     HeaderComponent,
+    TableComponent,
     ActivitiesCardComponent,
     ActivitiesComponent,
     
