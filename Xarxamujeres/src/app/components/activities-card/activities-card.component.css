@@ -1,18 +1,18 @@
 #card {
-    width: 18rem;
     height: 18rem;
     background: #F6F4E8;
     box-shadow: -5px 5px 10px rgba(236, 234, 223, 0.2), 5px -5px 10px rgba(236, 234, 223, 0.2), -5px -5px 10px rgba(255, 254, 241, 0.9), 5px 5px 13px rgba(236, 234, 223, 0.9), inset 1px 1px 2px rgba(255, 254, 241, 0.3), inset -1px -1px 2px rgba(236, 234, 223, 0.5);
     border-radius: 5px;
     padding: 0.5rem;
     border-radius: 10px;
+    padding: 2rem;
     /* temp */
     margin: 10rem;
 }
 
 .wrapper {
+    padding-bottom: 5rem;
     height: 30%;
-    padding-left: 2rem;
 }
 
 .circle {
@@ -24,7 +24,6 @@
 }
 
 .wrapper_emoji {
-    background-color: royalblue;
     display: grid;
     place-content: center;
 }
@@ -41,7 +40,35 @@
     border-radius: 100%;
 }
 
+#members {
+    height: 30%;
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
 #member_circle {
-    width: 60;
-    height: 60;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#member_circle img {
+    height: 100%;
+    border-radius: 100%;
+}
+
+.other_members {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background: #d9d9d9;
+    text-align: center;
+}
+
+.other_members p {
+    margin-top: 25%;
+    text-align: center;
 }
