@@ -16,6 +16,7 @@ import { TableComponent } from './components/table/table.component';
 import { ActivitiesCardComponent } from './components/activities-card/activities-card.component';
 import { ActivitiesComponent } from './Views/activities/activities.component';
 import { DetailAssociatedComponent } from './Views/detail-associated/detail-associated.component';
+import { DashboardComponent } from './Views/dashboard/dashboard.component';
 
 
 
@@ -35,6 +36,7 @@ import { DetailAssociatedComponent } from './Views/detail-associated/detail-asso
     ActivitiesCardComponent,
     ActivitiesComponent,
     DetailAssociatedComponent,
+    DashboardComponent,
     
   ],
   imports: [
