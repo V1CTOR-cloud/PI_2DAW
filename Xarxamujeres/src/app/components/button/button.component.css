@@ -90,3 +90,12 @@
 #rightArrow img {
     height: 60%;
 }
+
+#filter {
+    border: 0.5px solid #1e1e1e35;
+}
+
+#filter .dropdown,
+button {
+    background: transparent;
+}

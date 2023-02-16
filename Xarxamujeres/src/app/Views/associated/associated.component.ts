@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AssociatedComponent {
   public moduleTitle:string = 'Associated 🤝';
+  public associatedLenght:number = 536;
+  public associatedFilteredLenght:number = 536;
 }
