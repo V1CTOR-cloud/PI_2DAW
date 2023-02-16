@@ -1,6 +1,15 @@
 <div class="container-fluid p-0" id="img">
     <div class="col-12 p-0" id="btn_box">
-        <app-button [type]="leftArrowBtn"></app-button>
-        <app-button [type]="rightArrowBtn"></app-button>
+        <div [ngSwitch]="case">
+            <div *ngSwitchCase="'one'" class="photo">
+                <div *ngFor="let element of list">
+
+                    <br>
+                    <app-button [type]="leftArrowBtn"></app-button>
+                    <app-button [type]="rightArrowBtn"></app-button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

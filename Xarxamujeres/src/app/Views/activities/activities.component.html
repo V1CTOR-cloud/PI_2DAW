@@ -1,39 +1,97 @@
 <app-header [moduleTitle]="moduleTitle"></app-header>
-<div class="container-fluid p-0">
+<div class="container-fluid">
     <div class="row me-0">
-        <div class="col-2 bg-light d-none d-lg-block p-0">
+        <div class="col-2 d-none d-lg-block">
             <app-sidebar></app-sidebar>
         </div>
-        <div class="col-10 p-0 ps-3 pe-3 pt-0">
+        <div class="col-10 p-0">
             <div class="container-fluid">
-                <div class="col-12 p-0" id="main">
-                    <div class="container-fluid p-0">
-                        <div class="row">
-                            <div class="col-12">
-                                <app-input [type]="'searchInput'"></app-input>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <h2>Showing <span>{{activitiesLength}}</span> Activities</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid p-0" id="activities_cols">
+                <div class="row">
+                    <div class="col-12" id="main">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <app-input [type]="'searchInput'"></app-input>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <h2>Showing <span>{{activitiesLength}}</span> Activities</h2>
+                                </div>
+                                <div class="col-12 p-0 mt-4">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <h2 class="h2 text-center">{{col1}}</h2>
+                                                <div id="line" style="border-color: #9A62A635;"></div>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <h2 class="h2 text-center">{{col2}}</h2>
+                                                <div id="line" style="border-color: #4CAF5035;"></div>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
 
-                        <div class="row">
-                            <div class="col-4">
-                                a
-                                <!-- <app-activities-card></app-activities-card> -->
-                            </div>
-                            <div class="col-4">
-                                a
-                                <!-- <app-activities-card></app-activities-card> -->
-                            </div>
-                            <div class="col-4">
-                                a
-                                <!-- <app-activities-card></app-activities-card> -->
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <h2 class="h2 text-center">{{col3}}</h2>
+                                                <div id="line" style="border-color: #d4347435;"></div>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                                <app-activities-card></app-activities-card>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="col-12 p-0" id="main">
+                        <div class="container-fluid p-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <app-input [type]="'searchInput'"></app-input>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <h2>Showing <span>{{activitiesLength}}</span> Activities</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid p-0" id="activities_cols">
+                            <div class="row p-0">
+                                <div class="col-12" id="columna">
+                                    <h2 class="h2">{{col1}}</h2>
+                                    <app-activities-card>
+                                    </app-activities-card>
+                                </div>
+                                <div class="col-4" id="columna">
+                                    <h2 class="h2">{{col2}} </h2>
+                                    <app-activities-card></app-activities-card>
+                                </div>
+                                <div class="col-4" id="columna">
+                                    <h2 class="h2">{{col3}}</h2>
+
+                                    <app-activities-card></app-activities-card>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
