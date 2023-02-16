@@ -1,0 +1,18 @@
+#line {
+    height: 80px;
+    background: #1e1e1e35;
+    width: 1px;
+}
+
+#icon {
+    height: 40px;
+    width: 40px;
+}
+
+#icon_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 15%;
+}
