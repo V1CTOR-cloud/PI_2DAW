@@ -1,0 +1,47 @@
+#card {
+    width: 18rem;
+    height: 18rem;
+    background: #F6F4E8;
+    box-shadow: -5px 5px 10px rgba(236, 234, 223, 0.2), 5px -5px 10px rgba(236, 234, 223, 0.2), -5px -5px 10px rgba(255, 254, 241, 0.9), 5px 5px 13px rgba(236, 234, 223, 0.9), inset 1px 1px 2px rgba(255, 254, 241, 0.3), inset -1px -1px 2px rgba(236, 234, 223, 0.5);
+    border-radius: 5px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    /* temp */
+    margin: 10rem;
+}
+
+.wrapper {
+    height: 30%;
+    padding-left: 2rem;
+}
+
+.circle {
+    height: 4rem;
+    width: 4rem;
+    background: rgba(154, 98, 166, 0.6);
+    opacity: 0.9;
+    border-radius: 100%;
+}
+
+.wrapper_emoji {
+    background-color: royalblue;
+    display: grid;
+    place-content: center;
+}
+
+.wrapper_emoji p {
+    font-size: 100%;
+}
+
+.status {
+    height: 30%;
+    width: 30%;
+    background: rgba(76, 175, 80);
+    opacity: 0.6;
+    border-radius: 100%;
+}
+
+#member_circle {
+    width: 60;
+    height: 60;
+}
