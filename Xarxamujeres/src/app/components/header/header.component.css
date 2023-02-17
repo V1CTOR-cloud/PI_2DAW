@@ -21,6 +21,33 @@
     width: 15%;
 }
 
-.offcanvas{
+.offcanvas {
     width: 250px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+li:hover {
+    border-bottom: 3px solid #d43474;
+}
+
+li:hover i {
+    filter: invert(31%) sepia(29%) saturate(4073%) hue-rotate(308deg) brightness(90%) contrast(92%);
+}
+
+a {
+    color: black;
+}
+
+li:hover a {
+    transition: none;
+    color: #d43474;
+}
+
+li {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
 }

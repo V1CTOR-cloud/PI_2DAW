@@ -1,8 +1,8 @@
 <header class="p-0">
     <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <a class="navbar-brand d-none d-lg-block" href="#">
             <img src="../../../assets/logo.png" height="100" alt="MDB Logo" loading="lazy" />
@@ -20,15 +20,16 @@
                 <div id="line" class="ms-3 me-3"></div>
             </li> -->
                 <li class="nav-item">
+                    <i [routerLink]="['/dashboard']">
+                        <img  src="../../../assets/dashboard.png" class="ms-3 me-3" alt=""
+                            id="icon">
+                    </i>
                     <i>
-                    <img src="../../../assets/dashboard.png" class="ms-3 me-3" alt="" id="icon">
-                </i>
+                        <img src="../../../assets/folder.png" class="ms-3 me-3" alt="" id="icon">
+                    </i>
                     <i>
-                    <img src="../../../assets/folder.png" class="ms-3 me-3" alt="" id="icon">
-                </i>
-                    <i>
-                    <img src="../../assets/calendar.png" class="ms-3 me-3" alt="calendarIcon" id="icon" />
-                </i>
+                        <img src="../../assets/calendar.png" class="ms-3 me-3" alt="calendarIcon" id="icon" />
+                    </i>
                 </li>
             </ul>
             <div id="line" class="ms-3 me-3"></div>

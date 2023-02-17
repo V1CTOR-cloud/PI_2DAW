@@ -18,6 +18,8 @@ import { ActivitiesComponent } from './Views/activities/activities.component';
 import { AssociatedFormComponent } from './Views/associated-form/associated-form.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailAssociatedComponent } from './Views/detail-associated/detail-associated.component';
+import { DashboardComponent } from './Views/dashboard/dashboard.component';
 
 
 
@@ -37,6 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     ActivitiesCardComponent,
     ActivitiesComponent,
     AssociatedFormComponent,
+    DetailAssociatedComponent,
+    DashboardComponent,
     
   ],
   imports: [
