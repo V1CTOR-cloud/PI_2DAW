@@ -7,6 +7,7 @@ import { SignupconfirmComponent } from './Views/signupconfirm/signupconfirm.comp
 import { ActivitiesComponent } from './Views/activities/activities.component';
 import { DashboardComponent } from './Views/dashboard/dashboard.component';
 import { DetailComponent } from './Views/detail/detail.component';
+import { AssociatedFormComponent } from './Views/associated-form/associated-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -17,7 +18,7 @@ const routes: Routes = [
   { path: 'associated', component: AssociatedComponent },
   { path: 'activities', component: ActivitiesComponent },
   { path: 'detail', component: DetailComponent },
-  
+  { path: 'newAssociated', component: AssociatedFormComponent },
 ];
 
 @NgModule({

@@ -121,9 +121,10 @@
 }
 
 #carrousel {
+    margin: 100px;
     justify-content: center;
-    height: 100vh;
     background: var(--background);
+    width: 1px;
 }
 
 .custom-select {

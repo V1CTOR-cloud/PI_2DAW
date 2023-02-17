@@ -31,7 +31,6 @@
 
 #icon:hover {
     border-bottom: 3px solid #d43474;
-    filter: invert(31%) sepia(29%) saturate(4073%) hue-rotate(308deg) brightness(90%) contrast(92%);
 }
 
 #icon:hover i {

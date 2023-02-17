@@ -29,12 +29,18 @@
 </button>
 <div *ngSwitchCase="'filterDate'" class="dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="filter">
-      Discharger Date
-    </button>
+            Discharger Date
+        </button>
     <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#">Action</a></li>
         <li><a class="dropdown-item" href="#">Another action</a></li>
         <li><a class="dropdown-item" href="#">Something else here</a></li>
     </ul>
 </div>
+<button *ngSwitchCase="'delete'" id="delete">
+        <img src="../../../assets/icon-delete.png" alt="">
+    </button>
+<button *ngSwitchCase="'edit'" id="edit">
+        <img src="../../../assets/edit-icon.png" alt="">
+    </button>
 </div>
