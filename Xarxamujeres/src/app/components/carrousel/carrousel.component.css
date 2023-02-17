@@ -10,11 +10,10 @@
         background-size: cover;
         position: relative;
     }
-    
-    img.img {
-        width: 100px;
-        height: 2%;
-    }
+    /* .img {
+        width: 10px;
+        height: 10px;
+    } */
     
     #btn_box {
         position: absolute;

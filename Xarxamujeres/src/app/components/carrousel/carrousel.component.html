@@ -1,16 +1,8 @@
-<div id="img">
-    <div id="btn_box">
-        <div class="photo">
-            <div class="img">
-                <img [src]="list[currentImageIndex].img">
-            </div>
-            <br>
-            <button (click)="prevImage()" id="leftArrow">
+<img [src]="list[currentImageIndex].img">
+
+<button (click)="prevImage()" id="leftArrow">
           <img src="../../../assets/arrow-left.png" alt="Anterior">
         </button>
-            <button (click)="nextImage()" id="rightArrow">
+<button (click)="nextImage()" id="rightArrow">
           <img src="../../../assets/arrow-right.png" alt="Siguiente">
         </button>
-        </div>
-    </div>
-</div>

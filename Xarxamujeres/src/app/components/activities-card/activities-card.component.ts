@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./activities-card.component.css']
 })
 export class ActivitiesCardComponent {
+  
+  @Input() type: string = '';
   @Input() emoji: string ='🎉';
   @Input() title: string = 'Valencian corts proposals';
   @Input() description: string = 'Today, 17 January 2022 was an important day for our association.';
