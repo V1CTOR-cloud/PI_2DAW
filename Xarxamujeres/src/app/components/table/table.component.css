@@ -1,30 +1,46 @@
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     border-radius: 10px;
     border-style: hidden; /* hide standard table (collapsed) border */
-    box-shadow: 0 0 0 1px black; /* this draws the table border  */ 
+    box-shadow: 0 0 0 1px #1e1e1e35; /* this draws the table border  */ 
 }
 
 table *{
     padding: 1em;
 }
 table tbody tr:first-child th {
-    border-right: 1px solid black;
+    border-right: 1px solid #1e1e1e35;
 }
 
 /* Apply a border to the right of all but the last column */
-table td:not(:last-child) {
-    border-right: 1px solid black;
+tbody tr:not(:first-child) {
+    border-right: 1px solid #1e1e1e35;
 }
 
 /* Apply a border to the bottom of all but the last row */
 table tbody tr:not(:last-child) {
-    border-bottom: 1px solid black !important;
+    border-bottom: 1px solid #1e1e1e35 !important;
 }
-#handler th:first-child{
+
+th, td{
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: end;
+    font-weight: normal;
     text-align: start;
-}   
+}
 #handler th:last-child{
     text-align: end;
+}
+th span {
+    color: #D43474;
+}
+#handler th:first-child {
+    padding-top: 0;
+    padding-bottom:0;
+}
+
+#handler th:last-child *{
+    padding: 0;
 }

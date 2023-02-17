@@ -1,8 +1,9 @@
 <table>
     <thead>
         <tr id="handler">
-            <app-input [type]="'searchInput'"></app-input>
-            <th colspan="1">Showing 562 results</th>
+            <!-- <th colspan="2">Showing 562 results</th> -->
+            <th colspan="2"><app-input [type]="'tableSearchInput'"></app-input></th>
+            <th colspan="2">Showing <span> {{ Nresults }} </span> results</th>
         </tr>
     </thead>
     <tbody>
