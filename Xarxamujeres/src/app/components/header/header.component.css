@@ -8,9 +8,14 @@
     width: 1px;
 }
 
-#icon {
+#icon, .topicon{
     height: 40px;
     width: 40px;
+}
+
+#plusicon{
+    height: 60px;
+    width: 60px
 }
 
 #icon_box {
@@ -29,11 +34,15 @@
     cursor: pointer;
 }
 
+/* .topicon{
+    height: 100%;
+} */
+
 #icon:hover {
     border-bottom: 3px solid #d43474;
 }
 
-#icon:hover i {
+#icon:hover i, .topicon:hover, #plusicon:hover {
     filter: invert(31%) sepia(29%) saturate(4073%) hue-rotate(308deg) brightness(90%) contrast(92%);
 }
 
