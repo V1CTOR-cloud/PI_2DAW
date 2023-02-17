@@ -11,8 +11,9 @@ export class CarrouselComponent {
   currentImageIndex = 0;
   list = [
     { img: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-    { img: "https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg?auto=compress&cs=tinysrgb&w=1200" },
-    { img: "https://images.pexels.com/photos/4542178/pexels-photo-4542178.jpeg?auto=compress&cs=tinysrgb&w=1200" }
+    { img: "https://images.pexels.com/photos/5491144/pexels-photo-5491144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
+    { img: "https://images.pexels.com/photos/4542178/pexels-photo-4542178.jpeg?auto=compress&cs=tinysrgb&w=1200" },
+    { img: "https://images.pexels.com/photos/8975673/pexels-photo-8975673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" }
   ];
 
   prevImage() {
