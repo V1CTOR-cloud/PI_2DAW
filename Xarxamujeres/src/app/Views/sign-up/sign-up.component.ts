@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sign-up',
@@ -12,6 +12,8 @@ export class SignUpComponent {
 
   public email: string = "email";
   public name: string = "name";
+
+  @Input() allowedExtensions: Array<string>= [""]
 
   public selectedFile: File = {} as File;
 

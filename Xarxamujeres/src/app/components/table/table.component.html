@@ -1,7 +1,6 @@
 <table>
     <thead>
         <tr id="handler">
-            <!-- <th colspan="2">Showing 562 results</th> -->
             <th colspan="2">
                 <app-input [type]="'tableSearchInput'"></app-input>
             </th>
@@ -15,22 +14,12 @@
             <th>Adress</th>
             <th>Discharge Date</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
+        <ng-container *ngFor="let item of Array;">
+            <tr>
+                <ng-container *ngFor="let item2 of item;">
+                    <td>{{item2}}</td>
+                </ng-container>
+            </tr>
+        </ng-container>
     </tbody>
 </table>

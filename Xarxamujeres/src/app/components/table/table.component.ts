@@ -6,5 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent {
- @Input() associateLength: number = 600;
+  @Input() associateLength: number = 600;
+
+  @Input() Array: Array<string>[] = [];
+
 }
