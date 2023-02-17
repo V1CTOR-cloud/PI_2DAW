@@ -1,5 +1,8 @@
     #img {
-        height: 20%;
+        margin-top: 70em;
+        margin-left: 20em;
+        height: 2em;
+        width: 1em;
         filter: drop-shadow(5px 5px 13px rgba(220, 220, 209, 0.9));
         border-radius: 30px 0px;
         background-position: center;
@@ -8,8 +11,9 @@
         position: relative;
     }
     
-    .img {
-        width: 40%;
+    img.img {
+        width: 100px;
+        height: 2%;
     }
     
     #btn_box {
