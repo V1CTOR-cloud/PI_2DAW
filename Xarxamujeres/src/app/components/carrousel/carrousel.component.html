@@ -2,10 +2,14 @@
     <div class="col-12 p-0" id="btn_box">
         <div *ngIf="list.length > 0" class="photo">
             <div *ngFor="let element of list">
-                <div class=""> <img [src]="element.img"></div>
+                <div class="img"> <img [src]="element.img"></div>
                 <br>
-                <app-button [type]="'leftArrow'"></app-button>
-                <app-button [type]="'rightArrow'"></app-button>
+                <button *ngSwitchCase='"leftArrow"' id="leftArrow">
+                    <img src="../../../assets/arrow-left.png" alt="">
+                </button>
+                <button *ngSwitchCase='"rightArrow"' id="rightArrow">
+                    <img src="../../../assets/arrow-right.png" alt="">
+                </button>
             </div>
         </div>
     </div>

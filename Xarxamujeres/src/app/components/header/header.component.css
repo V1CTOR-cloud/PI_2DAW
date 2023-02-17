@@ -29,19 +29,20 @@
     cursor: pointer;
 }
 
-li:hover {
+#icon:hover {
     border-bottom: 3px solid #d43474;
+    filter: invert(31%) sepia(29%) saturate(4073%) hue-rotate(308deg) brightness(90%) contrast(92%);
 }
 
-li:hover i {
+#icon:hover i {
     filter: invert(31%) sepia(29%) saturate(4073%) hue-rotate(308deg) brightness(90%) contrast(92%);
 }
 
 a {
-    color: black;
+    color: #1e1e1e35;
 }
 
-li:hover a {
+#icon:hover a {
     transition: none;
     color: #d43474;
 }
