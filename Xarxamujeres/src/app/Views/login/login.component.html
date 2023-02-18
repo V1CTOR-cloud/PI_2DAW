@@ -38,8 +38,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-5 col-md-12 col-sm-12 col-xs-12" id="carrusel">
-            <app-carrousel></app-carrousel>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12" id="carrousel">
+            <div id="carrousel_img" style="background-image: url({{images[counter].img}});">
+                <div id="btn_box">
+                    <app-button (click)="previous()" [type]="'leftArrow'"></app-button>
+                    <app-button (click)="next()" [type]="'rightArrow'"></app-button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

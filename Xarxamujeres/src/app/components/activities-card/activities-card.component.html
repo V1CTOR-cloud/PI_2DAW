@@ -1,4 +1,4 @@
-<div *ngSwitch="type">
+<div [ngSwitch]="type">
     <div *ngSwitchCase="'cardActivity'" class="col-12 mt-5" id="card" (click)="selectionCard">
         <div class="wrapper">
             <div class="circle">
@@ -16,6 +16,52 @@
             <div id="member_circle" style="background-image: url(https://images.pexels.com/photos/3732652/pexels-photo-3732652.jpeg?auto=compress&cs=tinysrgb&w=600);">
             </div>
             <div id="member_circle" style="background-image: url(https://images.pexels.com/photos/13947143/pexels-photo-13947143.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);">
+            </div>
+            <div class="other_members">
+                <p>+3</p>
+            </div>
+        </div>
+    </div>
+    <div *ngSwitchCase="'cardActivity2'" class="col-12 mt-5" id="card" (click)="selectionCard">
+        <div class="wrapper">
+            <div class="circle">
+                <div class="status"></div>
+                <div class="wrapper_emoji">
+                    <p>{{emoji2}}</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>{{title2}} </h3>
+        <p> {{description2}} </p>
+        <div id="members">
+            <div id="member_circle" style="background-image: url({{memberImage}});"></div>
+            <div id="member_circle" style="background-image: url(https://images.pexels.com/photos/3732652/pexels-photo-3732652.jpeg?auto=compress&cs=tinysrgb&w=600);">
+            </div>
+            <div id="member_circle" style="background-image: url(https://images.pexels.com/photos/13947143/pexels-photo-13947143.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);">
+            </div>
+            <div class="other_members">
+                <p>+3</p>
+            </div>
+        </div>
+    </div>
+    <div *ngSwitchCase="'cardActivity3'" class="col-12 mt-5" id="card" (click)="selectionCard">
+        <div class="wrapper">
+            <div class="circle">
+                <div class="status"></div>
+                <div class="wrapper_emoji">
+                    <p>{{emoji3}}</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>{{title3}} </h3>
+        <p> {{description3}} </p>
+        <div id="members">
+            <div id="member_circle" style="background-image: url({{memberImage}});"></div>
+            <div id="member_circle" style="background-image: url({{memberImage2}});">
+            </div>
+            <div id="member_circle" style="background-image: url({{memberImage3}});">
             </div>
             <div class="other_members">
                 <p>+3</p>
