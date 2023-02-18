@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './Views/dashboard/dashboard.component';
 import { DetailComponent } from './Views/detail/detail.component';
 import { FilesComponent } from './Views/files/files.component';
+import { RemarksComponent } from './Views/remarks/remarks.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { FilesComponent } from './Views/files/files.component';
     DashboardComponent,
     DetailComponent,
     FilesComponent,
+    RemarksComponent,
     
   ],
   imports: [

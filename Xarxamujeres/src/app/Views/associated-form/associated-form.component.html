@@ -6,10 +6,44 @@
         </div>
         <div class="col-10 p-0">
             <div class="container-fluid">
-                <form #f="ngForm" (ngSubmit)="onSubmitform(f)">
-                    <input type="file"  name="myFile" (change)="fileEvent($event)"/>
-                    <button>Upload Image</button>
-                </form>
+                <div class="row pb-3">
+                    <h3>New Associated</h3>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-8">
+                        <form  (ngSubmit)="onSubmit()" method="post" action="#" >
+                            <div class="mb-3">
+                                <label for="date">Fecha de Creación</label>
+                                <input  [(ngModel)]="date" type="date" class="form-control" id="date"/>
+                            </div>
+                            <div class="mb-3">
+                              <label for="nameSurname" class="form-label">Nombre y Apellidos</label>
+                              <input [(ngModel)]="nameSurname" type="text" class="form-control" id="nameSurname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Foto</label>
+                                <input [(ngModel)]="formFile" class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mb-3">
+                              <label for="PC" class="form-label">Código Postal</label>
+                              <input [(ngModel)]="PC" type="text" class="form-control" id="PC">
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label">Ciudad</label>
+                                <input [(ngModel)]="city" type="text" class="form-control" id="city">
+                            </div>
+                            <div class="mb-3">
+                                <label for="province" class="form-label">Provincia</label>
+                                <input [(ngModel)]="province" type="text" class="form-control" id="province">
+                            </div>
+                            <div class="mb-3">
+                                <label for="BD">Fecha de Nacimiento</label>
+                                <input [(ngModel)]="BD" type="date" class="form-control" id="BD"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
