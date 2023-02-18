@@ -8,6 +8,9 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
   styleUrls: ['./associated-form.component.css']
 })
 export class AssociatedFormComponent {
+
+  public moduleTitle:string = 'Associated 🤝';
+
     constructor(private http: HttpClient) { }
 
      filedata:any;

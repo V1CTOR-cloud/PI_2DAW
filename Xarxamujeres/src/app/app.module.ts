@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { DashboardComponent } from './Views/dashboard/dashboard.component';
 import { DetailComponent } from './Views/detail/detail.component';
+import { FilesComponent } from './Views/files/files.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { DetailComponent } from './Views/detail/detail.component';
     AssociatedFormComponent,
     DashboardComponent,
     DetailComponent,
+    FilesComponent,
     
   ],
   imports: [

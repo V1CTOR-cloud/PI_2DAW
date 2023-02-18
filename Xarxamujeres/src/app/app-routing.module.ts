@@ -8,6 +8,7 @@ import { ActivitiesComponent } from './Views/activities/activities.component';
 import { DashboardComponent } from './Views/dashboard/dashboard.component';
 import { DetailComponent } from './Views/detail/detail.component';
 import { AssociatedFormComponent } from './Views/associated-form/associated-form.component';
+import { FilesComponent} from './Views/files/files.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'activities', component: ActivitiesComponent },
   { path: 'detail', component: DetailComponent },
   { path: 'newAssociated', component: AssociatedFormComponent },
+  { path: 'files', component: FilesComponent },
 ];
 
 @NgModule({

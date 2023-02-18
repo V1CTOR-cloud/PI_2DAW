@@ -95,12 +95,19 @@
     border: 0.5px solid black;
 }
 
+#newAssociated button{
+    border: 0.5px solid #9A62A6;
+    color: #9A62A6;
+    border-radius: 5px;
+    padding: 6px 12px;
+}
+
 #filter .dropdown,
-button {
+button,  #newAssociated button {
     background: transparent;
 }
 
-#edit {
+#edit{
     border-radius: 100%;
     height: 40px;
     width: 40px;
