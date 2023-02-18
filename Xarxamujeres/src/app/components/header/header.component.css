@@ -1,0 +1,62 @@
+#header {
+    /* border-bottom: 1px solid #1e1e1e35; */
+}
+
+#line {
+    height: 80px;
+    background: #1e1e1e35;
+    width: 1px;
+}
+
+#icon, .topicon{
+    height: 40px;
+    width: 40px;
+}
+
+#plusicon{
+    height: 60px;
+    width: 60px
+}
+
+#icon_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 15%;
+}
+
+.offcanvas {
+    width: 250px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+/* .topicon{
+    height: 100%;
+} */
+
+#icon:hover {
+    border-bottom: 3px solid #d43474;
+}
+
+#icon:hover i, .topicon:hover, #plusicon:hover {
+    filter: invert(31%) sepia(29%) saturate(4073%) hue-rotate(308deg) brightness(90%) contrast(92%);
+}
+
+a {
+    color: #1e1e1e35;
+}
+
+#icon:hover a {
+    transition: none;
+    color: #d43474;
+}
+
+li {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
+}

@@ -1,0 +1,13 @@
+<div id="carrusel">
+  <div class="imagen">
+    <img [src]="list[currentImageIndex].img" style="width: 50em;">
+  </div>
+  <div id="btn_box">
+    <button (click)="prevImage()" id="leftArrow">
+      <img src="../../../assets/arrow-left.png" alt="Anterior">
+    </button>
+    <button (click)="nextImage()" id="rightArrow">
+      <img src="../../../assets/arrow-right.png" alt="Siguiente">
+    </button>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1e1e1e84;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200 bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1E1E1E;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+#searchIcon img {
+    height: 60%;
+}
+
+#searchTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 80%;
+    gap: 0.5rem;
+    border: 1px solid #1e1e1e35;
+    border-radius: 8px;
+    /* padding: 1em; margin: 1em; */
+}
+
+#searchTable img {
+    margin-left: 1em;
+    width: 30px
+}
+
+#tableText {
+    border-bottom: none;
+}

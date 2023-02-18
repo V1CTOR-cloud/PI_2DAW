@@ -1,0 +1,43 @@
+<div class="d-flex flex-column align-items-center align-items-sm-start text-white min-vh-100">
+    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+        <li>
+            <a [routerLink]="['/dashboard']" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house">
+                    <img src="../../assets/dashboard.png" alt="calendarIcon" id="icon" />
+                </i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['/associated']" class="nav-link align-middle px-0">
+                <i class="fs-4 bi-house">
+                    <img src="../../assets/partners.png" alt="calendarIcon" id="icon" />
+                </i> <span class="ms-1 d-none d-sm-inline">Associated</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/activities']" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                <i class="fs-4 bi-speedometer2">
+                    <img src="../../assets/activities.png" alt="calendarIcon" id="icon" />
+                </i>
+                <span class="ms-1 d-none d-sm-inline">Activities</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/files']" class="nav-link px-0 align-middle">
+                <i class="fs-4 bi-table">
+                    <img src="../../assets/folder.png" alt="calendarIcon" id="icon" />
+                </i>
+                <span class="ms-1 d-none d-sm-inline">Files</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link px-0 align-middle disabled">
+                <i class="fs-4 bi-table">
+                    <img src="../../assets/calendar.png" alt="calendarIcon" id="icon" />
+                </i>
+                <span class="ms-1 d-none d-sm-inline">Calendar</span>
+            </a>
+        </li>
+        <li>
+    </ul>
+</div>

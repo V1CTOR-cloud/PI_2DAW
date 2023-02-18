@@ -1,0 +1,50 @@
+<div class="container-fluid" id="login">
+    <div class="row">
+        <div class="col-xl-5 col-md-12 col-sm-12 col-xs-12" id="info">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-12" id="header_info">
+                        <img src="../../../assets/logo.png" alt="logo" id="logo">
+                        <h1 class="display-3">Create Account</h1>
+                        <p>Almost there 🤏 </p>
+                    </div>
+                    <div class="col-12 p-0" id="body_info">
+                        <!-- Inputs -->
+                        <div class="container-fluid p-0" id="input_box">
+                            <div class="row">
+                                <div class="col-12">
+                                    <app-input [type]="passwordInput"></app-input>
+                                    <app-input [type]="confirmPasswordInput"></app-input>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- _Inputs_ -->
+                        <!-- Buttons -->
+                        <div class="container-fluid p-0" id="btn_box">
+                            <div class="row p-0">
+                                <div class="col-12 p-0">
+                                    <app-button [type]="signUpBtn"></app-button>
+                                    <div id="separator">
+                                        <hr id="line">
+                                        <h3>OR</h3>
+                                        <hr id="line">
+                                    </div>
+                                    <app-button [type]="signInBtn"></app-button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- _Buttons_ -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- <app-input></app-input>
+            <app-button [type]="signInBtn"></app-button> -->
+            <!-- <app-button [type]="signUpBtn"></app-button>
+            <app-button [type]="continueBtn"></app-button> -->
+        </div>
+        <div class="col-xl-7 d-none d-xl-block" style="padding-top:20px" id="carrousel">
+            <app-carrousel></app-carrousel>
+        </div>
+    </div>
+</div>

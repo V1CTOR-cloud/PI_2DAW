@@ -1,0 +1,49 @@
+<div [ngSwitch]="type">
+    <button *ngSwitchCase='"signIn"' id="signIn">
+        Sign In
+    </button>
+    <button *ngSwitchCase='"signUp"' id="signUp" [routerLink]="['/signup']">
+        Sign Up
+    </button>
+    <button *ngSwitchCase='"continue"' id="continue">
+        Continue
+    </button>
+    <button *ngSwitchCase='"leftArrow"' id="leftArrow">
+        <img src="../../../assets/arrow-left.png" alt="">
+    </button>
+    <button *ngSwitchCase='"rightArrow"' id="rightArrow">
+        <img src="../../../assets/arrow-right.png" alt="">
+    </button>
+    <a *ngSwitchCase='"newAssociated"' id="newAssociated" [routerLink]="['/newAssociated']">
+        <button>Create Associated</button>
+    </a>
+    <button *ngSwitchCase="'filterAssociated'" style="border: none;">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="filter">
+                All Associated
+            </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+</div>
+</button>
+<div *ngSwitchCase="'filterDate'" class="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="filter">
+            Discharger Date
+        </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+</div>
+<button *ngSwitchCase="'delete'" id="delete">
+        <img src="../../../assets/icon-delete.png" alt="">
+    </button>
+<button *ngSwitchCase="'edit'" id="edit">
+        <img src="../../../assets/edit-icon.png" alt="">
+    </button>
+</div>

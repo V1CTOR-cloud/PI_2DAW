@@ -1,0 +1,16 @@
+<app-header [moduleTitle]="moduleTitle"></app-header>
+<div class="container-fluid">
+    <div class="row me-0">
+        <div class="col-2 d-none d-lg-block ps-0">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-10 p-0">
+            <div class="container-fluid">
+                <form #f="ngForm" (ngSubmit)="onSubmitform(f)">
+                    <input type="file"  name="myFile" (change)="fileEvent($event)"/>
+                    <button>Upload Image</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

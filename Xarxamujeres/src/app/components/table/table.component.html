@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr id="handler">
+            <th colspan="2">
+                <app-input [type]="'tableSearchInput'"></app-input>
+            </th>
+            <th colspan="2">Showing <span> {{ associateLength }} </span> results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Adress</th>
+            <th>Discharge Date</th>
+        </tr>
+        <ng-container *ngFor="let item of Array;">
+            <tr>
+                <ng-container *ngFor="let item2 of item;">
+                    <td>{{item2}}</td>
+                </ng-container>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

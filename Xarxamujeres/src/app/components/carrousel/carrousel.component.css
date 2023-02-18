@@ -1,0 +1,51 @@
+.imagen {
+    padding-top: 3em;
+    position: relative;
+    overflow: hidden;
+    width: 50em;
+
+  }
+  
+  .imagen img {
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* recorta el borde inferior */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ajusta la imagen para cubrir todo el contenedor */
+  }
+
+    #btn_box {
+        position: absolute;
+        right: 0;
+        width: 17%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;        
+        margin-top: -5em;
+
+    }
+    
+    #leftArrow,
+    #rightArrow {
+        background: transparent;
+        border: 1.5px solid #F9F4E8;
+        border-radius: 100%;
+        height: 70px;
+        width: 70px;
+        background: transparent;
+        background-image: url('https://web.archive.org/web/20160312084221im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-pink.png?1443460871');
+        background-repeat: repeat-x;
+        background-position: 0 -100%;
+        transition: 1.5s ease;
+    }
+    
+    #leftArrow:hover,
+    #rightArrow:hover {
+        color: white;
+        background-position: center;
+    }
+    
+    #leftArrow img,
+    #rightArrow img {
+        height: 60%;
+    }

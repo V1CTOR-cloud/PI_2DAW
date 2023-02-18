@@ -1,0 +1,88 @@
+<app-header [moduleTitle]="moduleTitle"></app-header>
+<div class="container-fluid">
+    <div class="row me-0">
+        <div class="col-2 d-none d-lg-block ps-0">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-10 p-0">
+            <div class="container-fluid p-0" id="main">
+                <div class="row p-0">
+                    <div class="col-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-5 p-0" id="col-photo">
+                                    <img src="https://images.pexels.com/photos/4063537/pexels-photo-4063537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen">
+                                </div>
+                                <div class="col-7 p-0">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 d-flex">
+                                                <h2>{{name}}</h2>
+                                                <app-button class="ms-3" [type]="'edit'"></app-button>
+                                                <app-button class="ms-3" [type]="'delete'"></app-button>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div class="container-fluid">
+                                                    <div class="row mb-3">
+                                                        <div class="col-6">
+                                                            <h5>Phone 📞</h5>
+                                                            <p>{{phone}} </p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>Mail ✉️</h5>
+                                                            <p>{{mail}} </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row  mb-3">
+                                                        <div class="col-6">
+                                                            <h5>Birth Date 🎈</h5>
+                                                            <p>{{birthDate}} </p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>DNI 💳</h5>
+                                                            <p>{{dni}} </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row  mb-3">
+                                                        <div class="col-6">
+                                                            <h5>Discharge Date 🗳️</h5>
+                                                            <p>{{dischargeDate}}</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>Postal Code 📮</h5>
+                                                            <p>{{postalCode}}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row  mb-3">
+                                                        <div class="col-6">
+                                                            <h5>Province 🗺️</h5>
+                                                            <p>{{province}}</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>Location 🧭</h5>
+                                                            <p>{{location}} </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <h5>Disable Grade 🦽</h5>
+                                                            <p>{{disableGrade}}</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>Disable Type 🦼</h5>
+                                                            <p>{{disableType}}</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

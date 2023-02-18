@@ -1,0 +1,13 @@
+#col-photo {
+    display: flex;
+    justify-content: center;
+}
+
+#col-photo img {
+    height: 65%;
+    border-radius: 10px;
+}
+
+#debugger {
+    background: lawngreen;
+}
