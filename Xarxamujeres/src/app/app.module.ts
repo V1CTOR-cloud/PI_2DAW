@@ -17,10 +17,15 @@ import { ActivitiesComponent } from './Views/activities/activities.component';
 import { AssociatedFormComponent } from './Views/associated-form/associated-form.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { enableProdMode } from "@angular/core";
+import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+
+import { NgApexchartsModule } from "ng-apexcharts";
 
 import { DashboardComponent } from './Views/dashboard/dashboard.component';
 import { DetailComponent } from './Views/detail/detail.component';
 import { FilesComponent } from './Views/files/files.component';
+import { GraphicCardActivitiesComponent } from './components/graphic-card-activities/graphic-card-activities.component';
 
 
 @NgModule({
@@ -42,13 +47,15 @@ import { FilesComponent } from './Views/files/files.component';
     DashboardComponent,
     DetailComponent,
     FilesComponent,
+    GraphicCardActivitiesComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
