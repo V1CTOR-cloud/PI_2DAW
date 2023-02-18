@@ -125,8 +125,9 @@
 }
 
 #carrousel {
-    background-size: auto;
-    justify-content: center;
     height: 100%;
-    background: var(--background);
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
