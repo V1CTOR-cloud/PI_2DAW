@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Associated;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -45,5 +46,13 @@ class AssociatedCRUDController extends AbstractController
             'DATE' => $associated->getDate()->format('l d M Y')
         ];
         return $this->json($data);
+    }
+
+    #[Route('/insert', name: 'insert', methods: ['POST'])]
+    public function insert(EntityManagerInterface $entityManager, Request $request): JsonResponse
+    {
+        $data = json_decode($request->getContent(), true);
+        $entityManager->getRepository(Associated::class)->insert($data);
+        return $this->json(['message' => "Socia insertada correctamente"]);
     }
 }

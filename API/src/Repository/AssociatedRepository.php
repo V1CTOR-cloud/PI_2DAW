@@ -39,6 +39,21 @@ class AssociatedRepository extends ServiceEntityRepository
         }
     }
 
+    public function insert(array $data): void
+    {
+        $associated = new Associated;
+        $associated
+            ->setDate($data['DATE'])
+            ->setName($data['NAME'])
+            ->setPC($data['PC'])
+            ->setLoc($data['LOC'])
+            ->setProv($data['PROV'])
+            ->setBithdate($data['BD'])
+            ->setDisabDeg($data['DD'])
+            ->setDisabType($data['DT']);
+        $this->save($associated, true);
+    }
+
 //    /**
 //     * @return Associated[] Returns an array of Associated objects
 //     */
