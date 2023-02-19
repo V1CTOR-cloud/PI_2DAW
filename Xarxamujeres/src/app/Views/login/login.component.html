@@ -9,7 +9,41 @@
                         <p>Good to see you back 👋 </p>
                     </div>
                     <div class="col-12 p-0" id="body_info">
-                        <div class="container-fluid p-0" id="input_box">
+                        <form  (ngSubmit)="onSubmit()" method="post" action="#" >
+                            <div class="container-fluid p-0" id="input_box">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input [(ngModel)]="MAIL" type="email" placeholder="Email" id="MAIL">
+                                        <input [(ngModel)]="PWD" type="password" placeholder="Password" id="PWD">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid p-0" id="btn_box">
+                                <div class="row p-0">
+                                    <div class="col-12 p-0">
+                                        <app-button [type]="signInBtn" [label]="'Sign In'"></app-button>
+                                        <div id="separator">
+                                            <hr id="line">
+                                            <h3>OR</h3>
+                                            <hr id="line">
+                                        </div>
+                                        <app-button [type]="signUpBtn" [label]="'Sign Up'" type="submit"></app-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                            <!-- <div class="mb-3">
+                                <label for="Title" class="form-label">Título</label>
+                                <input [(ngModel)]="Title" type="text" class="form-control" id="Title">
+                              </div>
+                            <div class="mb-3">
+                              <label for="Author" class="form-label">Autor</label>
+                              <select [(ngModel)]="Author" class="form-select" id="Author">
+                                <option [value]="item.EMAIL" *ngFor="let item of lista">{{item.NAME}}</option>
+                              </select>
+                            </div> -->
+
+                        <!-- <div class="container-fluid p-0" id="input_box">
                             <div class="row">
                                 <div class="col-12">
                                     <app-input [type]="emailInput"></app-input>
@@ -29,7 +63,7 @@
                                     <app-button [type]="signUpBtn" [label]="'Sign Up'"></app-button>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

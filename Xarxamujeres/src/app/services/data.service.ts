@@ -23,6 +23,15 @@ export class DataService {
     return this.http.get<Employee>(this.urlEmployees);
   }
 
+  getEmployee(mail:string):Observable<Employee>{
+    return this.http.get<Employee>(this.urlEmployees+"/"+mail);
+  }
+
+  login(mail:string):Observable<Employee>{
+    return this.http.post<Employee>((this.urlEmployees+"/login"),mail);
+  }
+
+
   getAssociated():Observable<Associated>{
     return this.http.get<Associated>(this.urlAssociated);
   }
