@@ -18,6 +18,7 @@ export class HeaderComponent {
       var json = JSON.parse(this.data)[0];
       this.userName = json['NAME'];
       this.job = json['PROFILE'];
+      this.profilePhoto = json['IMAGE'];
     }
   }
 }
