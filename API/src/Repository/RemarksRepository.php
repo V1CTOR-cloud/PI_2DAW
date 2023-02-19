@@ -39,6 +39,17 @@ class RemarksRepository extends ServiceEntityRepository
         }
     }
 
+    public function insert(array $data): void
+    {
+        $remark = new Remarks;
+        $remark
+            ->setTitle($data['TITLE'])
+            ->setDescription($data['DESC'])
+            ->setDischargeDate($data['DD'])
+            ->setAuthor($data['AUTH']);
+        $this->save($remark, true);
+    }
+
 //    /**
 //     * @return Remarks[] Returns an array of Remarks objects
 //     */
