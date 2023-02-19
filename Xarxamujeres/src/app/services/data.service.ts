@@ -34,9 +34,19 @@ export class DataService {
   getRemark(id: number):Observable<Remark>{
     return this.http.get<Remark>(this.urlRemarks+'/'+id);
   }
+
   getRemarks():Observable<Remark>{
     return this.http.get<Remark>(this.urlRemarks);
   }
+
+  newRemark(body:any):Observable<Remark>{
+    return this.http.post<Remark>((this.urlRemarks+'/insert'),body);
+  }
+
+  deleteRemark(id:number){
+    return this.http.delete(this.urlRemarks+'/delete/'+id);
+  }
+
 
   // getGames(id: string):Observable<Games>{
   //   return this.http.get<Games>(this.gamesUrl + `${id}`);

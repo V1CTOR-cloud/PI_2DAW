@@ -15,6 +15,7 @@ export interface Associated {
 }
 
 export interface Remark {
+    ID:     number;
     TITLE:  string;
     DESC:   string;
     AUTHOR: string;

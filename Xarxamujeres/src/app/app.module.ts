@@ -33,6 +33,7 @@ import{MatPaginatorModule} from '@angular/material/paginator';
 import { SplashScreenStateService } from './services/splash-screen-state.service';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 import { AssociatedResolver } from './resolvers/associated.resolver';
+import { RemarksFormComponent } from './Views/remarks-form/remarks-form.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { AssociatedResolver } from './resolvers/associated.resolver';
     RemarksComponent,
     GraphicCardActivitiesComponent,
     SplashScreenComponent,
+    RemarksFormComponent,
     
   ],
   imports: [
