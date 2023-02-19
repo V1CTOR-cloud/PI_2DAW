@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { DataService } from 'src/app/services/data.service';
+import {Router} from "@angular/router";
+import { Employee } from 'src/app/models/response';
 
 @Component({
   selector: 'app-login',
@@ -28,6 +32,10 @@ export class LoginComponent {
   ];
   public counter: number = 0;
 
+  @Input() MAIL: string = "";
+  @Input() PWD: string = "";
+
+  constructor(private http: HttpClient, public service: DataService, private router: Router) { }
 
   public previous(): void {
     if (this.counter === 0) {
@@ -45,7 +53,29 @@ export class LoginComponent {
     }
   }
 
+  public login(json:any): void {
+    this.service.login(json).subscribe((response) => {this.NewSession(response);
+    });
+  }
 
+  NewSession(response:any){
+    
+    // let employee: Employee= response;
+    console.log(response);
+    localStorage.setItem('Employee', JSON.stringify(response));
+    this.router.navigate(['/dashboard']);
+  }
+
+  onSubmit(){
+    console.log(this.MAIL,this.PWD);
+
+    const json = {
+      'EMAIL': this.MAIL, 
+      'PASS': this.PWD
+    }
+
+    this.login(json);
+  }
 
 
 }
