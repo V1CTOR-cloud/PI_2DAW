@@ -6,9 +6,19 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  public profilePhoto: string = 'https://steamuserimages-a.akamaihd.net/ugc/928179527045332677/1130B6058CA9AB60BB5FFC42E1377A4C6871337B/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'
-  public userName: string = "Joan Coronado";
-  public job: string = "Technician";
+  public data = window.localStorage.getItem('Employee');
+  public profilePhoto: string = 'https://ionicframework.com/docs/img/demos/avatar.svg'
+  public userName: string = "User";
+  public job: string = "Job";
   
   @Input() moduleTitle: string = "";
+
+  ngOnInit(){
+    if (this.data!=null){
+      var json = JSON.parse(this.data)[0];
+      this.userName = json['NAME'];
+      this.job = json['PROFILE'];
+      this.profilePhoto = json['IMAGE'];
+    }
+  }
 }

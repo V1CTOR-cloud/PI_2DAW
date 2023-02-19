@@ -13,17 +13,18 @@
                     <div class="col-2 p-0">
                         <!-- <button (click)="nextRemark()">Previous</button> -->
                         <!-- <app-button [style]="'rightArrow'"></app-button> -->
-                        <app-button (click)="prevRemark()" [type]="'leftArrow'"></app-button>
+                        <app-button (click)="prevRemark()" [type]="'leftArrow2'"></app-button>
                     </div>
                     <div class="col-2 p-0">
-                        <app-button (click)="nextRemark()" [type]="'rightArrow'"></app-button>
+                        <app-button (click)="nextRemark()" [type]="'rightArrow2'"></app-button>
                     </div>
                 </div>
                 <div class="row pb-3" style="height: 100vh;">
                     <div class="col-8 p-0">
                         <div class="container-fluid">
                             <div class="row p-3 p-3">
-                                <div class="d-flex align-middle justify-content-center" style="flex-direction: column; text-align: center;">
+                                <div class="d-flex align-middle justify-content-center"
+                                    style="flex-direction: column; text-align: center;">
                                     <h1>{{Title}}</h1>
                                     <h4>{{Author}}</h4>
                                 </div>
@@ -38,15 +39,24 @@
                     <div class="col-4 p-3" id="quickActions">
                         <div class="container-fluid">
                             <div class="row p-3 p-3">
-                                <div class="d-flex align-middle justify-content-center" style="flex-direction: column; text-align: center;">
+                                <div class="d-flex align-middle justify-content-center"
+                                    style="flex-direction: column; text-align: center;">
                                     <h2>Quick Actions</h2>
                                 </div>
                             </div>
                             <div class="row p-3">
-                                <div class="d-flex align-middle justify-content-center" style="flex-direction: column; text-align: center;">
-                                    <h4 [routerLink]="['/remarks/new']">New Remark</h4>
-                                    <!-- <h4>Edit Remark</h4> -->
-                                    <h4 (click)="delete(id)">Delete Remark</h4>
+                                <div class="d-flex align-middle justify-content-center"
+                                    style="flex-direction: column; text-align: center;">
+                                    <h4 [routerLink]="['/remarks/new']">
+                                        <img src="../../assets/newRemark.png" alt="newRemarkIcon" id="icon" />
+                                        New Remark
+                                    </h4>
+                                    <!-- <h4> <img src="../../assets/editRemark.png" alt="deleteRemarkIcon" id="icon" />
+                                        Edit Remark</h4> -->
+                                    <h4 (click)="delete(id)" id="deleteSection">
+                                        <img src="../../assets/deleteRemark.png" alt="deleteRemarkIcon" id="icon" />
+                                        Delete Remark
+                                    </h4>
                                 </div>
                             </div>
                         </div>
