@@ -30,6 +30,9 @@ import { GraphicCardActivitiesComponent } from './components/graphic-card-activi
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{MatSnackBarModule} from '@angular/material/snack-bar';
 import{MatPaginatorModule} from '@angular/material/paginator';
+import { SplashScreenStateService } from './services/splash-screen-state.service';
+import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
+import { AssociatedResolver } from './resolvers/associated.resolver';
 
 
 @NgModule({
@@ -53,6 +56,7 @@ import{MatPaginatorModule} from '@angular/material/paginator';
     FilesComponent,
     RemarksComponent,
     GraphicCardActivitiesComponent,
+    SplashScreenComponent,
     
   ],
   imports: [
@@ -65,7 +69,10 @@ import{MatPaginatorModule} from '@angular/material/paginator';
     MatSnackBarModule,
     MatPaginatorModule
   ],
-  providers: [],
+  providers: [
+    SplashScreenStateService,
+    AssociatedResolver
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

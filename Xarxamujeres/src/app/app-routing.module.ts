@@ -11,6 +11,7 @@ import { AssociatedFormComponent } from './Views/associated-form/associated-form
 import { FilesComponent} from './Views/files/files.component';
 import { RemarksComponent} from './Views/remarks/remarks.component';
 import { GraphicCardActivitiesComponent } from './components/graphic-card-activities/graphic-card-activities.component';
+import { AssociatedResolver } from './resolvers/associated.resolver';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'signup', component: SignUpComponent },
   { path: 'confirm', component: SignupconfirmComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'associated', component: AssociatedComponent },
+  { path: 'associated', component: AssociatedComponent},
   { path: 'activities', component: ActivitiesComponent },
   { path: 'detail', component: DetailComponent },
   { path: 'newAssociated', component: AssociatedFormComponent },

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
+import { SplashScreenStateService } from 'src/app/services/splash-screen-state.service';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-associated',
@@ -14,7 +16,7 @@ export class AssociatedComponent {
 
   public ArrayAssociated: Array<string>[] = [];
 
-  constructor(public service: DataService) {}
+  constructor(public service: DataService, private activatedRoute: ActivatedRoute) {}
 
   public getEmployees(): void {
     this.service.getEmployees().subscribe((response) => {this.EmployeesToArray(response);
@@ -45,6 +47,10 @@ export class AssociatedComponent {
 
   ngOnInit(){
     this.getAssociated();
+    // this.activatedRoute.snapshot.data['itemsList']
+    // .subscribe((res:any) => {
+    //    console.log({ res });
+    // })
   }
 
 }
