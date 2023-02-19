@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
+import {Router} from "@angular/router";
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-associated-form',
@@ -20,7 +22,7 @@ export class AssociatedFormComponent {
     @Input() province: string = "";
     @Input() BD: string = "";
 
-    constructor(private http: HttpClient, public service: DataService) { }
+    constructor(private http: HttpClient, public service: DataService, private router: Router, public snackBar: MatSnackBar) { }
 
     public onSubmit(){
       let localDate = this.strToTS(this.date);
@@ -41,6 +43,8 @@ export class AssociatedFormComponent {
       }
 
       this.newAssociated(json);
+      this.openSnackBar('Socia insertada correctamente.', 'CERRAR')
+      this.router.navigate(['/associated'])
 
     }
 
@@ -51,6 +55,12 @@ export class AssociatedFormComponent {
 
     public newAssociated(json:any): void {
       this.service.newAssociated(json).subscribe((response) => {console.log(response);
+      });
+    }
+
+    openSnackBar(message: string, action: string) {
+      this.snackBar.open(message, action, {
+        duration: 2000,
       });
     }
 

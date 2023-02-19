@@ -14,3 +14,9 @@ export interface Associated {
     DATE: string;
 }
 
+export interface Remark {
+    TITLE:  string;
+    DESC:   string;
+    AUTHOR: string;
+    DATE:   string;
+}

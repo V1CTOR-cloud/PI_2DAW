@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Employee, Associated } from '../models/response';
+import { Employee, Associated, Remark } from '../models/response';
 
 
 
@@ -14,6 +14,7 @@ export class DataService {
 
   public urlEmployees: string = '/api/employees';
   public urlAssociated: string = '/api/associated/';
+  public urlRemarks: string = '/api/remarks';
   // public gamesUrl: string = 'https://www.balldontlie.io/api/v1/stats?player_ids[]=';
   // public urlCharacter: string = 'https://rickandmortyapi.com/api/character/';
   // public urlEpisode: string = 'https://rickandmortyapi.com/api/episode/';
@@ -28,6 +29,13 @@ export class DataService {
 
   newAssociated(body:any):Observable<Associated>{
     return this.http.post<Associated>((this.urlAssociated+'insert'),body);
+  }
+
+  getRemark(id: number):Observable<Remark>{
+    return this.http.get<Remark>(this.urlRemarks+'/'+id);
+  }
+  getRemarks():Observable<Remark>{
+    return this.http.get<Remark>(this.urlRemarks);
   }
 
   // getGames(id: string):Observable<Games>{
