@@ -1,8 +1,24 @@
-label{
+label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    vertical-align: center;
+}
+
+.form-control {
+    background-color: rgba(228, 211, 233, 0.4);
+    border: 1px solid #7B7979;
+    border-radius: 5px;
+}
+
+h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: black;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
 }

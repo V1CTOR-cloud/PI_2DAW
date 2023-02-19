@@ -11,22 +11,22 @@
                 </div>
                 <div class="row pb-3">
                     <div class="col-8">
-                        <form  (ngSubmit)="onSubmit()" method="post" action="#" >
+                        <form (ngSubmit)="onSubmit()" method="post" action="#">
                             <div class="mb-3">
                                 <label for="date">Fecha de Creación</label>
-                                <input  [(ngModel)]="date" type="date" class="form-control" id="date"/>
+                                <input [(ngModel)]="date" type="date" class="form-control" id="date" />
                             </div>
                             <div class="mb-3">
-                              <label for="nameSurname" class="form-label">Nombre y Apellidos</label>
-                              <input [(ngModel)]="nameSurname" type="text" class="form-control" id="nameSurname">
+                                <label for="nameSurname" class="form-label">Nombre y Apellidos</label>
+                                <input [(ngModel)]="nameSurname" type="text" class="form-control" id="nameSurname">
                             </div>
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Foto</label>
                                 <input [(ngModel)]="formFile" class="form-control" type="file" id="formFile">
                             </div>
                             <div class="mb-3">
-                              <label for="PC" class="form-label">Código Postal</label>
-                              <input [(ngModel)]="PC" type="text" class="form-control" id="PC">
+                                <label for="PC" class="form-label">Código Postal</label>
+                                <input [(ngModel)]="PC" type="text" class="form-control" id="PC">
                             </div>
                             <div class="mb-3">
                                 <label for="city" class="form-label">Ciudad</label>
@@ -38,10 +38,10 @@
                             </div>
                             <div class="mb-3">
                                 <label for="BD">Fecha de Nacimiento</label>
-                                <input [(ngModel)]="BD" type="date" class="form-control" id="BD"/>
+                                <input [(ngModel)]="BD" type="date" class="form-control" id="BD" />
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </form>
+                            <app-button [type]="'newAssociated2'"></app-button>
+                        </form>
                     </div>
                 </div>
             </div>
