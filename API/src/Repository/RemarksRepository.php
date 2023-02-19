@@ -2,7 +2,9 @@
 
 namespace App\Repository;
 
+use App\Entity\Employee;
 use App\Entity\Remarks;
+use DateTime;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -42,12 +44,22 @@ class RemarksRepository extends ServiceEntityRepository
     public function insert(array $data): void
     {
         $remark = new Remarks;
+        $employee = $this->getEntityManager()->getRepository(Employee::class)->find($data['AUTH']);
+        $allRemark = $this->findAll();
+        $max = (count($allRemark)+1);
         $remark
+            ->setId($max)
             ->setTitle($data['TITLE'])
             ->setDescription($data['DESC'])
-            ->setDischargeDate($data['DD'])
-            ->setAuthor($data['AUTH']);
+            ->setDischargeDate(new DateTime())
+            ->setAuthor($employee);
         $this->save($remark, true);
+    }
+
+    public function delete(int $id): void
+    {
+        $remark = $this->find($id);
+        $this->remove($remark, true);
     }
 
 //    /**

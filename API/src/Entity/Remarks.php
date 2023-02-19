@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Remarks
 {
     #[ORM\Id]
-    #[ORM\GeneratedValue]
+    #[ORM\GeneratedValue(strategy:'NONE')]
     #[ORM\Column]
     private ?int $id = null;
 
@@ -26,6 +26,13 @@ class Remarks
     #[ORM\ManyToOne(inversedBy: 'remarks')]
     #[ORM\JoinColumn(nullable: false, referencedColumnName:'email')]
     private ?Employee $Author = null;
+
+    public function setId(int $id): self
+    {
+        $this->id = $id;
+        
+        return $this;
+    }
 
     public function getId(): ?int
     {

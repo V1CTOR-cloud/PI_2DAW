@@ -19,6 +19,7 @@ class RemarksCRUDController extends AbstractController
         $data = [];
         foreach ($results as $remark) {
             $data[] = [
+                'ID'=> $remark->getId(),
                 'TITLE'=> $remark->getTitle(),
                 'DESC' => $remark->getDescription(),
                 'AUTHOR'=> $remark->getAuthor()->getName(),
@@ -47,5 +48,13 @@ class RemarksCRUDController extends AbstractController
         $data = json_decode($request->getContent(), true);
         $entityManager->getRepository(Remarks::class)->insert($data);
         return $this->json(['message' => "Creada nueva nota"]);
+    }
+
+    #[Route('/delete/{id}', name: 'delete', methods: ['DELETE'])]
+    public function delete(int $id, EntityManagerInterface $entityManager): JsonResponse
+    {
+        $breweryRepository = $entityManager->getRepository(Remarks::class);
+        $breweryRepository->delete($id);
+        return $this->json(['message' => "Nota borrada correctamente"]);
     }
 }
