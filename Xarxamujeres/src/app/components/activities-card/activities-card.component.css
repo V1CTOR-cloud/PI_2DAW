@@ -102,13 +102,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
     flex-direction: row;
 }
 
 #list-item {
-    height: 20%;
-    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .category {
@@ -119,4 +121,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 20%;
+}
+
+.category p {
+    background-color: cadetblue;
 }
