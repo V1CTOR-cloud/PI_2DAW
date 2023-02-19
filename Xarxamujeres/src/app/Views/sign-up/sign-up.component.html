@@ -25,34 +25,28 @@
                                 <option value="3">Lawyer</option>
                                 <option value="3">Volunteer</option>
                             </select>
-                            <!-- <div ngxFileDrop [allowedExtensions]="['jpg', 'jpeg', 'png']"
-                                (onFileDrop)="onFileDropped($event)" (fileOver)="fileOver($event)" class="drop-zone"
-                                [ngClass]="{'file-over': fileOverActive}">
-                                <p>Arrastre y suelte un archivo aquí o haga clic para seleccionar uno.</p>
-                                <p>Solo se permiten archivos con las extensiones .jpg, .jpeg y .png.</p>
-                                <input type="file" (change)="onFileSelected($event)" class="hidden">
-                                <button class="upload-button" (click)="selectFile()">Seleccionar archivo</button>
-                            </div> -->
 
                         </div>
                     </div>
                 </div>
-                <!-- _Inputs_ -->
-                <!-- Buttons -->
                 <div class="container-fluid p-0" id="btn_box">
                     <div class="row p-0">
                         <div class="col-12 p-0">
-                            <app-button [type]="continueBtn" [routerLink]="['/confirm']"></app-button>
+                            <app-button [type]="'continue'" [routerLink]="['/confirm']" [label]="'Continue'"></app-button>
                             <div id="separator">
                                 <hr id="line">
                                 <h3>OR</h3>
                                 <hr id="line">
                             </div>
-                            <app-button [type]="signInBtn"></app-button>
+                            <app-button [type]="'signIn'" [label]="'Sign In'"></app-button>
                         </div>
                     </div>
                 </div>
-                <!-- _Buttons_ -->
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12" id="carrousel">
+                <div id="carrousel_img" style="background-image: url({{image}});">
+
+                </div>
             </div>
         </div>
     </div>
