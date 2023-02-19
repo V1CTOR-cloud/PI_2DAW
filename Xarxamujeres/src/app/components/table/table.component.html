@@ -17,7 +17,7 @@
         <ng-container *ngFor="let item of Array;">
             <tr>
                 <ng-container *ngFor="let item2 of item;">
-                    <td>{{item2}}</td>
+                    <td [routerLink]="['/detail']" >{{item2}}</td>
                 </ng-container>
             </tr>
         </ng-container>
