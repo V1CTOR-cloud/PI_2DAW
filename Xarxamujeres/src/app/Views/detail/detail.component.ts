@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from "@angular/router";
 import { Associated } from 'src/app/models/response';
 import { DataService } from 'src/app/services/data.service';
 
@@ -21,12 +24,12 @@ export class DetailComponent {
   public location: string = 'Valencia';
   public disableDeg: number = 1;
   public disableType: string = 'Sensory disability';
-  public photo: string = 'https://images.pexels.com/photos/4063537/pexels-photo-4063537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+  public photo: string = '';
 
   public id: number = 0;
   private sub: any;
 
-  constructor(private route: ActivatedRoute, public service: DataService) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient, public service: DataService, private router: Router, public snackBar: MatSnackBar) {}
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
@@ -57,5 +60,26 @@ export class DetailComponent {
     this.disableType = Associated.DT;
     this.photo = Associated.PHOTO;
   }
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 2000,
+    });
+  }
+
+  public deleteAssociated(id:number): void {
+    this.service.deleteAssociated(id).subscribe((response) => {console.log(response)});
+  }
+
+  public delete(){
+    this.deleteAssociated(this.id);
+    this.openSnackBar('Socia dada de baja correctamente.', 'CERRAR');
+    this.redirectTo('/associated');
+  }
+
+  redirectTo(uri:string){
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+    this.router.navigate([uri]));
+ }
 
 }

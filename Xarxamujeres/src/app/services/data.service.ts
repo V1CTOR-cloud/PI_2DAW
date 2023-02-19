@@ -60,6 +60,10 @@ export class DataService {
     return this.http.delete(this.urlRemarks+'/delete/'+id);
   }
 
+  deleteAssociated(id:number){
+    return this.http.delete(this.urlAssociated+'delete/'+id);
+  }
+
 
   // getGames(id: string):Observable<Games>{
   //   return this.http.get<Games>(this.gamesUrl + `${id}`);

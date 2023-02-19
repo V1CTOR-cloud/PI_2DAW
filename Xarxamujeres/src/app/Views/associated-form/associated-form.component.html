@@ -12,10 +12,10 @@
                 <div class="row pb-3">
                     <div class="col-8">
                         <form (ngSubmit)="onSubmit()" method="post" action="#">
-                            <div class="mb-3">
+                            <!-- <div class="mb-3">
                                 <label for="date">Fecha de Creación</label>
                                 <input [(ngModel)]="date" type="date" class="form-control" id="date" />
-                            </div>
+                            </div> -->
                             <div class="mb-3">
                                 <label for="nameSurname" class="form-label">Nombre y Apellidos</label>
                                 <input [(ngModel)]="nameSurname" type="text" class="form-control" id="nameSurname">
@@ -26,38 +26,34 @@
                             </div>
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Teléfono</label>
-                                <input [(ngModel)]="phone" type="text" class="form-control" id="phone">
+                                <input [(ngModel)]="phone" type="tel" class="form-control" id="phone">
                             </div>
                             <div class=" mb-3 ">
-                                <label for="PC " class="form-label ">Código Postal</label>
-                                <input [(ngModel)]="PC " type="text " class="form-control " id="PC ">
+                                <label for="PC" class="form-label ">Código Postal</label>
+                                <input [(ngModel)]="PC " type="text" class="form-control " id="PC ">
                             </div>
                             <div class="mb-3 ">
                                 <label for="city " class="form-label ">Ciudad</label>
-                                <input [(ngModel)]="city " type="text " class="form-control " id="city ">
+                                <input [(ngModel)]="city " type="text" class="form-control " id="city ">
                             </div>
                             <div class="mb-3 ">
                                 <label for="province " class="form-label ">Provincia</label>
-                                <input [(ngModel)]="province " type="text " class="form-control " id="province ">
+                                <input [(ngModel)]="province " type="text" class="form-control " id="province ">
                             </div>
                             <div class="mb-3 ">
                                 <label for="BD ">Fecha de Nacimiento</label>
-                                <input [(ngModel)]="BD " type="date " class="form-control " id="BD " />
+                                <input [(ngModel)]="BD " type="date" class="form-control " id="BD " />
                             </div>
                             <div class="mb-3 ">
                                 <label for="mail ">Email</label>
                                 <input [(ngModel)]="mail " type="text " class="form-control " id="mail " />
                             </div>
                             <div class="mb-3 ">
-                                <label for="FA ">Fecha de Alta</label>
-                                <input [(ngModel)]="FA " type="date " class="form-control " id="FA " />
-                            </div>
-                            <div class="mb-3 ">
                                 <label for="DD ">Grado de movilidad reducida</label>
                                 <input [(ngModel)]="DD " type="text " class="form-control " id="DD " />
                             </div>
                             <div class="mb-3 ">
-                                <label for="DT ">Tipo de movilidad reducida</label>
+                                <label for="DT">Tipo de movilidad reducida</label>
                                 <input [(ngModel)]="DT " type="text " class="form-control " id="DT " />
                             </div>
                             <app-button [type]=" 'submit' "></app-button>

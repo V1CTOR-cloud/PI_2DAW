@@ -37,7 +37,7 @@ export class AssociatedFormComponent {
       console.log(localDate);
 
       const json = {
-        'DATE': localDate, 
+        // 'DATE': localDate, 
         'NAME': this.nameSurname,
         'PHONE': this.phone,
         'PC': this.PC,
@@ -46,9 +46,7 @@ export class AssociatedFormComponent {
         'BD': localBDate,
         'MAIL' : this.mail,
         'DD': this.DD,
-        'DT': this.DT,
-        'FC': this.FA
-
+        'DT': this.DT
       }
 
       this.newAssociated(json);
