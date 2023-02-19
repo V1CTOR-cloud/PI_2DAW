@@ -75,6 +75,13 @@
     text-align: center;
 }
 
+#icon {
+    height: 4rem;
+    width: 4rem;
+    background: rgba(154, 98, 166, 0.6);
+    opacity: 0.9;
+}
+
 #cardLatestActivity {
     background: #F6F4E8;
     box-shadow: -5px 5px 10px rgba(236, 234, 223, 0.2), 5px -5px 10px rgba(236, 234, 223, 0.2), -5px -5px 10px rgba(255, 254, 241, 0.9), 5px 5px 13px rgba(236, 234, 223, 0.9), inset 1px 1px 2px rgba(255, 254, 241, 0.3), inset -1px -1px 2px rgba(236, 234, 223, 0.5);
@@ -82,4 +89,31 @@
     padding: 0.5rem;
     border-radius: 10px;
     padding: 2rem;
+}
+
+#cardLatestActivity_header {
+    height: 10rem;
+    width: 100%;
+}
+
+#cardLatestActivity_body {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+#list-item {
+    height: 20%;
+    background-color: royalblue;
+}
+
+.category {
+    background-color: #D4347436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
