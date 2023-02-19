@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 #[Route('/associated', name: 'app_associated_')]
 class AssociatedCRUDController extends AbstractController
 {
-    #[Route('/', name: 'list')]
+    #[Route('/', name: 'list', methods: ['GET'])]
     public function list(EntityManagerInterface $entityManager): JsonResponse
     {
         $results = $entityManager->getRepository(Associated::class)->findAll();
@@ -30,7 +30,7 @@ class AssociatedCRUDController extends AbstractController
         return $this->json($data);
     }
 
-    #[Route('/{id}', name: 'single')]
+    #[Route('/{id}', name: 'single', methods: ['GET'])]
     public function single(int $id, EntityManagerInterface $entityManager): JsonResponse
     {
         $associated = $entityManager->getRepository(Associated::class)->find($id);

@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Associated;
+use DateTime;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -42,13 +43,15 @@ class AssociatedRepository extends ServiceEntityRepository
     public function insert(array $data): void
     {
         $associated = new Associated;
+        $Date = new DateTime();
+        $BD = new DateTime();
         $associated
-            ->setDate($data['DATE'])
+            ->setDate($Date)
             ->setName($data['NAME'])
             ->setPC($data['PC'])
             ->setLoc($data['LOC'])
             ->setProv($data['PROV'])
-            ->setBithdate($data['BD'])
+            ->setBithdate($BD)
             ->setDisabDeg($data['DD'])
             ->setDisabType($data['DT']);
         $this->save($associated, true);
