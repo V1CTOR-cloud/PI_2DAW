@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'newAssociated', component: AssociatedFormComponent },
   { path: 'files', component: FilesComponent },
   { path: 'remarks', component: RemarksComponent },
-  {path: 'graphic', component:GraphicCardActivitiesComponent}
+  
 ];
 
 @NgModule({
