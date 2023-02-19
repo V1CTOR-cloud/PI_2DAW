@@ -59,3 +59,8 @@ th span {
 #handler th:last-child * {
     padding: 0;
 }
+
+.associated:hover{
+    background-color: white;
+    cursor: pointer;
+}

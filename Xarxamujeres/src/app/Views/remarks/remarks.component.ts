@@ -93,7 +93,12 @@ export class RemarksComponent {
   public delete(id:number){
     this.deleteRemark(id);
     this.openSnackBar('Comentario borrado correctamente.', 'CERRAR');
-    this.router.navigate(['/remarks']);
+    this.redirectTo('/remarks');
   }
+
+  redirectTo(uri:string){
+    this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+    this.router.navigate([uri]));
+ }
 
 }

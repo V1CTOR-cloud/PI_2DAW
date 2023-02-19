@@ -9,5 +9,6 @@ export class TableComponent {
   @Input() associateLength: number = 600;
 
   @Input() Array: Array<string>[] = [];
+  @Input() IDs: Array<string>[] = [];
 
 }

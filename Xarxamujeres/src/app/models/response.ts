@@ -6,12 +6,18 @@ export interface Employee {
 }
 
 export interface Associated {
-    NAME: string;
-    MAIL: null;
-    TELF: null;
-    LOC:  string;
-    PROV: string;
-    DATE: string;
+    ID:    number;
+    DATE:  string;
+    NAME:  string;
+    PHOTO: string;
+    MAIL:  string;
+    PC:    number;
+    LOC:   string;
+    PROV:  string;
+    BD:    string;
+    DD:    number;
+    DT:    string;
+    PHONE: string;
 }
 
 export interface Remark {

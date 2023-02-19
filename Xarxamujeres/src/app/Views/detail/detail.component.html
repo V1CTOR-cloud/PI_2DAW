@@ -14,7 +14,7 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-12" id="wrapper">
-                                                <div id="imagen" style="background-image: url(https://images.pexels.com/photos/4063537/pexels-photo-4063537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);"></div>
+                                                <div id="imagen" style="background-image: url({{photo}});"></div>
                                             </div>
                                             <app-activities-card [type]="'cardLatestActivity'" [emoji]="'🎉'" [title]="'Latest activities'" [activityTitle]="'Memory Workshop'" [activityDate]="'Monday 15  Jan 2023'"></app-activities-card>
                                         </div>
@@ -46,8 +46,10 @@
                                                             <p>{{birthDate}} </p>
                                                         </div>
                                                         <div class="col-6">
-                                                            <h5>DNI 💳</h5>
-                                                            <p>{{dni}} </p>
+                                                            <h5>Postal Code 📮</h5>
+                                                            <p>{{postalCode}}</p>
+                                                            <!-- <h5>DNI 💳</h5>
+                                                            <p>{{dni}} </p> -->
                                                         </div>
                                                     </div>
                                                     <div class="row  mb-3">
@@ -56,8 +58,8 @@
                                                             <p>{{dischargeDate}}</p>
                                                         </div>
                                                         <div class="col-6">
-                                                            <h5>Postal Code 📮</h5>
-                                                            <p>{{postalCode}}</p>
+                                                            <h5>Location 🧭</h5>
+                                                            <p>{{location}} </p>
                                                         </div>
                                                     </div>
                                                     <div class="row  mb-3">
@@ -66,19 +68,19 @@
                                                             <p>{{province}}</p>
                                                         </div>
                                                         <div class="col-6">
-                                                            <h5>Location 🧭</h5>
-                                                            <p>{{location}} </p>
+                                                            <h5>Disable Type 🦼</h5>
+                                                            <p>{{disableType}}</p>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-6">
                                                             <h5>Disable Grade 🦽</h5>
-                                                            <p>{{disableGrade}}</p>
+                                                            <p>{{disableDeg}}</p>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <!-- <div class="col-6">
                                                             <h5>Disable Type 🦼</h5>
                                                             <p>{{disableType}}</p>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
 
                                                 </div>

@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'associated', component: AssociatedComponent},
   { path: 'activities', component: ActivitiesComponent },
-  { path: 'detail', component: DetailComponent },
+  { path: 'detail/:id', component: DetailComponent },
   { path: 'newAssociated', component: AssociatedFormComponent },
   { path: 'files', component: FilesComponent },
   { path: 'remarks', component: RemarksComponent },

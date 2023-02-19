@@ -36,6 +36,10 @@ export class DataService {
     return this.http.get<Associated>(this.urlAssociated);
   }
 
+  getSingleAssociated(id: number):Observable<Associated>{
+    return this.http.get<Associated>(this.urlAssociated+id);
+  }
+
   newAssociated(body:any):Observable<Associated>{
     return this.http.post<Associated>((this.urlAssociated+'insert'),body);
   }

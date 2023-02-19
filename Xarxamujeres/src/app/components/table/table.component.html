@@ -14,10 +14,10 @@
             <th>Adress</th>
             <th>Discharge Date</th>
         </tr>
-        <ng-container *ngFor="let item of Array;">
-            <tr>
+        <ng-container *ngFor="let item of Array; index as i;">
+            <tr class="associated">
                 <ng-container *ngFor="let item2 of item;">
-                    <td [routerLink]="['/detail']" >{{item2}}</td>
+                    <td [routerLink]="['/detail',IDs[i]]" >{{item2}}</td>
                 </ng-container>
             </tr>
         </ng-container>

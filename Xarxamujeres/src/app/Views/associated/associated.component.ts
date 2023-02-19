@@ -15,6 +15,7 @@ export class AssociatedComponent {
   public associatedFilteredLenght:number = 536;
 
   public ArrayAssociated: Array<string>[] = [];
+  public ArrayIds: Array<string>[] = [];
 
   constructor(public service: DataService, private activatedRoute: ActivatedRoute) {}
 
@@ -37,12 +38,15 @@ export class AssociatedComponent {
   }
 
   public AssociatedToArray(response: any){
+    let ArrayIds = [];
     let newArray = [];
     for(let i = 0; i<response.length; i++){
+      ArrayIds.push(response[i].ID);
       newArray[i] = [response[i].NAME, response[i].MAIL, response[i].LOC, response[i].DATE];
     }
     this.ArrayAssociated = newArray;
     this.associatedLenght = this.ArrayAssociated.length;
+    this.ArrayIds = ArrayIds;
   }
 
   ngOnInit(){
