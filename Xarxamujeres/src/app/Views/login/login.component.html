@@ -9,7 +9,6 @@
                         <p>Good to see you back 👋 </p>
                     </div>
                     <div class="col-12 p-0" id="body_info">
-                        <!-- Inputs -->
                         <div class="container-fluid p-0" id="input_box">
                             <div class="row">
                                 <div class="col-12">
@@ -18,22 +17,19 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- _Inputs_ -->
-                        <!-- Buttons -->
                         <div class="container-fluid p-0" id="btn_box">
                             <div class="row p-0">
                                 <div class="col-12 p-0">
-                                    <app-button [type]="signInBtn"></app-button>
+                                    <app-button [type]="signInBtn" [label]="'Sign In'"></app-button>
                                     <div id="separator">
                                         <hr id="line">
                                         <h3>OR</h3>
                                         <hr id="line">
                                     </div>
-                                    <app-button [type]="signUpBtn"></app-button>
+                                    <app-button [type]="signUpBtn" [label]="'Sign Up'"></app-button>
                                 </div>
                             </div>
                         </div>
-                        <!-- _Buttons_ -->
                     </div>
                 </div>
             </div>

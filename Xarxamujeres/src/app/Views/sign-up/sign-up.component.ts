@@ -7,25 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class SignUpComponent {
 
-  public signInBtn: string = "signIn";
-  public continueBtn : string = "continue";
-
-  public email: string = "email";
   public name: string = "name";
-
-  @Input() allowedExtensions: Array<string>= [""]
-
-  public selectedFile: File = {} as File;
-
-  onFileSelected(event: Event): void {
-    const target = event.target as HTMLInputElement;
-    const file: File = (target.files as FileList)[0];
-    this.selectedFile = file;
-  }
-  selectFile(event: any) {
-    this.selectedFile = event.target.files[0];
-  }
+  public email: string = "email";
   
+  public image: string = "https://images.pexels.com/photos/3732864/pexels-photo-3732864.jpeg?auto=compress&cs=tinysrgb&w=1600";
   
+
 }
 

@@ -9,42 +9,38 @@
                         <p>Almost there 🤏 </p>
                     </div>
                     <div class="col-12 p-0" id="body_info">
-                        <!-- Inputs -->
                         <div class="container-fluid p-0" id="input_box">
                             <div class="row">
                                 <div class="col-12">
-                                    <app-input [type]="passwordInput"></app-input>
-                                    <app-input [type]="confirmPasswordInput"></app-input>
+                                    <app-input [type]="'password'"></app-input>
+                                    <app-input [type]="'confirmPassword'"></app-input>
                                 </div>
                             </div>
                         </div>
-                        <!-- _Inputs_ -->
-                        <!-- Buttons -->
                         <div class="container-fluid p-0" id="btn_box">
                             <div class="row p-0">
                                 <div class="col-12 p-0">
-                                    <app-button [type]="signUpBtn"></app-button>
+                                    <app-button [type]="'signIn'" [label]="'Sign In'"></app-button>
                                     <div id="separator">
                                         <hr id="line">
                                         <h3>OR</h3>
                                         <hr id="line">
                                     </div>
-                                    <app-button [type]="signInBtn"></app-button>
+                                    <app-button [type]="'signUp'" [label]="'Sign Up'"></app-button>
                                 </div>
                             </div>
                         </div>
-                        <!-- _Buttons_ -->
                     </div>
                 </div>
             </div>
-
-            <!-- <app-input></app-input>
-            <app-button [type]="signInBtn"></app-button> -->
-            <!-- <app-button [type]="signUpBtn"></app-button>
-            <app-button [type]="continueBtn"></app-button> -->
         </div>
-        <div class="col-xl-7 d-none d-xl-block" style="padding-top:20px" id="carrousel">
-            <app-carrousel></app-carrousel>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12" id="carrousel">
+            <div id="carrousel_img" style="background-image: url({{images[counter].img}});">
+                <div id="btn_box">
+                    <app-button (click)="previous()" [type]="'leftArrow'"></app-button>
+                    <app-button (click)="next()" [type]="'rightArrow'"></app-button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

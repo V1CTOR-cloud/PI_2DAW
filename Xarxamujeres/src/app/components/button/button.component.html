@@ -1,12 +1,12 @@
 <div [ngSwitch]="type">
     <button *ngSwitchCase='"signIn"' id="signIn">
-        Sign In
+        {{label}}
     </button>
     <button *ngSwitchCase='"signUp"' id="signUp" [routerLink]="['/signup']">
-        Sign Up
+        {{label}}
     </button>
-    <button *ngSwitchCase='"continue"' id="continue">
-        Continue
+    <button *ngSwitchCase='"continue"' id="continue" [routerLink]="['/confirm']">
+        {{label}}
     </button>
     <button *ngSwitchCase='"leftArrow"' id="leftArrow">
         <img src="../../../assets/arrow-left.png" alt="">
@@ -45,5 +45,8 @@
     </button>
 <button *ngSwitchCase="'edit'" id="edit">
         <img src="../../../assets/edit-icon.png" alt="">
+    </button>
+<button *ngSwitchCase="'camera'" id="camera">
+        <img src="../../../assets/camera-icon.png" alt="">
     </button>
 </div>
