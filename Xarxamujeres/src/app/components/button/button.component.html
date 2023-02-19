@@ -5,7 +5,7 @@
     <button *ngSwitchCase='"signUp"' id="signUp" [routerLink]="['/signup']">
         {{label}}
     </button>
-    <button *ngSwitchCase='"continue"' id="continue">
+    <button *ngSwitchCase='"continue"' id="continue" [routerLink]="['/confirm']">
         {{label}}
     </button>
     <button *ngSwitchCase='"leftArrow"' id="leftArrow">
@@ -45,5 +45,8 @@
     </button>
 <button *ngSwitchCase="'edit'" id="edit">
         <img src="../../../assets/edit-icon.png" alt="">
+    </button>
+<button *ngSwitchCase="'camera'" id="camera">
+        <img src="../../../assets/camera-icon.png" alt="">
     </button>
 </div>

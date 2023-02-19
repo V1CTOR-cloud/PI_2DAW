@@ -1,51 +1,56 @@
-<div class="col-xl-5 col-md-12 col-sm-12 col-xs-12" id="profile-pic">
-    <div class="container-fluid p-0">
-        <div class="row">
-            <div class="col-12" id="header_info">
-                <img src="../../../assets/logo.png" alt="logo" id="logo">
-                <h1 class="display-3">Create Account</h1>
-                <p>Magic starts here ✨</p>
-            </div>
-            <div class="col-12 p-0" id="body_info">
-                <!-- Inputs -->
-                <div class="container-fluid p-0" id="input_box">
-                    <div class="row">
-                        <div class="col-12">
-                            <app-input [type]="name"></app-input>
-                            <app-input [type]="email"></app-input>
-                            <select class="form-select">
-                                <option selected>
-                                    <p id="job">Job</p>
-                                </option>
-                                <option value="1">Psychologist</option>
-                                <option value="2">Xarxa Technician</option>
-                                <option value="3">Administrative Technician</option>
-                                <option value="3">Laboral Integration Technician</option>
-                                <option value="3">Psychologist Integration Technician</option>
-                                <option value="3">Lawyer</option>
-                                <option value="3">Volunteer</option>
-                            </select>
-
-                        </div>
+<div class="container-fluid" id="login">
+    <div class="row">
+        <div class="col-xl-5 col-md-12 col-sm-12 col-xs-12" id="info">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-12" id="header_info">
+                        <img src="../../../assets/logo.png" alt="logo" id="logo">
+                        <h1 class="display-3">Welcome back</h1>
+                        <p>Magic starts here ✨</p>
                     </div>
-                </div>
-                <div class="container-fluid p-0" id="btn_box">
-                    <div class="row p-0">
-                        <div class="col-12 p-0">
-                            <app-button [type]="'continue'" [routerLink]="['/confirm']" [label]="'Continue'"></app-button>
-                            <div id="separator">
-                                <hr id="line">
-                                <h3>OR</h3>
-                                <hr id="line">
+                    <div class="col-12 p-0" id="body_info">
+                        <div class="container-fluid p-0" id="input_box">
+                            <div class="row">
+                                <div class="col-12">
+                                    <app-input [type]="'name'"></app-input>
+                                    <app-input [type]="'email'"></app-input>
+                                    <select class="form-select">
+                                        <option selected>
+                                            <p id="job">Job</p>
+                                        </option>
+                                        <option value="1">Psychologist</option>
+                                        <option value="2">Xarxa Technician</option>
+                                        <option value="3">Administrative Technician</option>
+                                        <option value="3">Laboral Integration Technician</option>
+                                        <option value="3">Psychologist Integration Technician</option>
+                                        <option value="3">Lawyer</option>
+                                        <option value="3">Volunteer</option>
+                                    </select>
+                                </div>
                             </div>
-                            <app-button [type]="'signIn'" [label]="'Sign In'"></app-button>
+                        </div>
+                        <div class="container-fluid p-0" id="btn_box">
+                            <div class="row p-0">
+                                <div class="col-12 p-0">
+                                    <app-button [type]="'continue'" [label]="'Continue'"></app-button>
+                                    <div id="separator">
+                                        <hr id="line">
+                                        <h3>OR</h3>
+                                        <hr id="line">
+                                    </div>
+                                    <app-button [type]="'signUp'" [label]="'Sign Up'"></app-button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12" id="carrousel">
-                <div id="carrousel_img" style="background-image: url({{image}});">
-
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12" id="carrousel">
+            <div id="carrousel_img" style="background-image: url({{image}});">
+                <div id="btn_box">
+                    <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+                    <app-button [type]="'camera'"></app-button>
                 </div>
             </div>
         </div>

@@ -12,5 +12,6 @@ export class SignUpComponent {
   
   public image: string = "https://images.pexels.com/photos/3732864/pexels-photo-3732864.jpeg?auto=compress&cs=tinysrgb&w=1600";
   
+
 }
 
