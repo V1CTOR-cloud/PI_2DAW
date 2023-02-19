@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'signup', component: SignUpComponent },
   { path: 'confirm', component: SignupconfirmComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'associated', component: AssociatedComponent, resolve: {'itemsList': AssociatedResolver} },
+  { path: 'associated', component: AssociatedComponent},
   { path: 'activities', component: ActivitiesComponent },
   { path: 'detail', component: DetailComponent },
   { path: 'newAssociated', component: AssociatedFormComponent },

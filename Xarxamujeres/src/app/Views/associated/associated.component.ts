@@ -16,7 +16,7 @@ export class AssociatedComponent {
 
   public ArrayAssociated: Array<string>[] = [];
 
-  constructor(public service: DataService, public splashScreenStateService: SplashScreenStateService, private activatedRoute: ActivatedRoute) {}
+  constructor(public service: DataService, private activatedRoute: ActivatedRoute) {}
 
   public getEmployees(): void {
     this.service.getEmployees().subscribe((response) => {this.EmployeesToArray(response);
@@ -47,10 +47,10 @@ export class AssociatedComponent {
 
   ngOnInit(){
     this.getAssociated();
-    this.activatedRoute.snapshot.data['itemsList']
-    .subscribe((res:any) => {
-       console.log({ res });
-    })
+    // this.activatedRoute.snapshot.data['itemsList']
+    // .subscribe((res:any) => {
+    //    console.log({ res });
+    // })
   }
 
 }
