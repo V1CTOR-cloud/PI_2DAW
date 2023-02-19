@@ -1,12 +1,12 @@
 <div [ngSwitch]="type">
     <button *ngSwitchCase='"signIn"' id="signIn">
-        Sign In
+        {{label}}
     </button>
     <button *ngSwitchCase='"signUp"' id="signUp" [routerLink]="['/signup']">
-        Sign Up
+        {{label}}
     </button>
     <button *ngSwitchCase='"continue"' id="continue">
-        Continue
+        {{label}}
     </button>
     <button *ngSwitchCase='"leftArrow"' id="leftArrow">
         <img src="../../../assets/arrow-left.png" alt="">
