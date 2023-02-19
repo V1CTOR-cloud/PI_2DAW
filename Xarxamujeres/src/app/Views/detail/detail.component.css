@@ -1,15 +1,24 @@
-* {
-    outline: 1px solid lawngreen;
-}
-
 #col-photo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-#col-photo img {
-    height: 65%;
+#imagen {
+    height: 40rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #debugger {

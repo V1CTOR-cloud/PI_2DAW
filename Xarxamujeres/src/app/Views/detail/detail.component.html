@@ -8,12 +8,19 @@
             <div class="container-fluid p-0" id="main">
                 <div class="row p-0">
                     <div class="col-12 p-0">
-                        <div class="container-fluid p-0">
-                            <div class="row p-0">
-                                <div class="col-5 p-0" id="col-photo">
-                                    <img src="https://images.pexels.com/photos/4063537/pexels-photo-4063537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-5" id="col-photo">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12" id="wrapper">
+                                                <div id="imagen" style="background-image: url(https://images.pexels.com/photos/4063537/pexels-photo-4063537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);"></div>
+                                            </div>
+                                            <app-activities-card [type]="'cardLatestActivity'" [emoji]="'🎉'" [title]="'Latest activities'" [activityTitle]="'Memory Workshop'" [activityDate]="'Monday 15  Jan 2023'"></app-activities-card>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-7 p-0">
+                                <div class="col-7">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-12 d-flex">
