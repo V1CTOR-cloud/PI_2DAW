@@ -43,7 +43,6 @@ export class RemarksComponent {
     if(response!=null){
       let remark = response[0]
       this.Title = remark.TITLE;
-      // console.log(response[0]);
       this.Author = remark.AUTHOR;
       this.Text = remark.DESC;
       this.Date = remark.DATE;
