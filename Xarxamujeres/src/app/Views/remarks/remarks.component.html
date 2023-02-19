@@ -6,10 +6,18 @@
         </div>
         <div class="col-10 p-0">
             <div class="container-fluid">
-                <div class="row pb-3" style="border-bottom: 1px solid black;">
-                    <h4>{{Date}}</h4>
-                    <h4>La cantidad de Remarks es de {{maxId}}</h4>
-                    <button (click)="nextRemark()">Next</button>
+                <div class="row pb-3 d-flex" style="border-bottom: 1px solid black;">
+                    <div class="col-8 p-0">
+                        <h4>{{Date}}</h4>
+                    </div>
+                    <div class="col-2 p-0">
+                        <!-- <button (click)="nextRemark()">Previous</button> -->
+                        <!-- <app-button [style]="'rightArrow'"></app-button> -->
+                        <app-button (click)="prevRemark()" [type]="'leftArrow'"></app-button>
+                    </div>
+                    <div class="col-2 p-0">
+                        <app-button (click)="nextRemark()" [type]="'rightArrow'"></app-button>
+                    </div>
                 </div>
                 <div class="row pb-3" style="height: 100vh;">
                     <div class="col-8 p-0" style="border: 1px solid black;">
@@ -28,7 +36,20 @@
                         </div>
                     </div>
                     <div class="col-4 p-3" style="border: 1px solid black;">
-                        <h4>Quick Actions</h4>
+                        <div class="container-fluid">
+                            <div class="row p-3 p-3">
+                                <div class="d-flex align-middle justify-content-center" style="flex-direction: column; text-align: center;">
+                                    <h2>Quick Actions</h2>
+                                </div>
+                            </div>
+                            <div class="row p-3">
+                                <div class="d-flex align-middle justify-content-center" style="flex-direction: column; text-align: center;">
+                                    <h4 [routerLink]="['/remarks/new']" >New Remark</h4>
+                                    <!-- <h4>Edit Remark</h4> -->
+                                    <h4 (click)="delete(id)" >Delete Remark</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

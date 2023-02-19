@@ -12,6 +12,7 @@ import { FilesComponent} from './Views/files/files.component';
 import { RemarksComponent} from './Views/remarks/remarks.component';
 import { GraphicCardActivitiesComponent } from './components/graphic-card-activities/graphic-card-activities.component';
 import { AssociatedResolver } from './resolvers/associated.resolver';
+import { RemarksFormComponent } from './Views/remarks-form/remarks-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'newAssociated', component: AssociatedFormComponent },
   { path: 'files', component: FilesComponent },
   { path: 'remarks', component: RemarksComponent },
+  { path: 'remarks/new', component: RemarksFormComponent }
   
 ];
 
