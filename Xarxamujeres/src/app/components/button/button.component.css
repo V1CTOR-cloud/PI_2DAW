@@ -102,6 +102,26 @@
     padding: 6px 12px;
 }
 
+#newAssociated2 button {
+    border: 0.5px solid #9A62A6;
+    color: white;
+    background-color: #9A62A6;
+    border-radius: 50px 50px 5px 5px;
+    padding: 6px 12px;
+    height: 50px;
+    width: 150px;
+}
+
+#newAssociated2 button:hover {
+    border: 0.5px solid #9A62A6;
+    color: #9A62A6;
+    background-color: rgba(199, 134, 219, 0.4);
+    border-radius: 50px 50px 5px 5px;
+    padding: 6px 12px;
+    height: 50px;
+    width: 150px;
+}
+
 #filter .dropdown,
 button,
 #newAssociated button {
