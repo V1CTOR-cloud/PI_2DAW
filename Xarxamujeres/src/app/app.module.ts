@@ -17,8 +17,8 @@ import { ActivitiesComponent } from './Views/activities/activities.component';
 import { AssociatedFormComponent } from './Views/associated-form/associated-form.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { enableProdMode } from "@angular/core";
-import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
+// import { enableProdMode } from "@angular/core";
+// import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 
 import { NgApexchartsModule } from "ng-apexcharts";
 
@@ -27,6 +27,9 @@ import { DetailComponent } from './Views/detail/detail.component';
 import { FilesComponent } from './Views/files/files.component';
 import { RemarksComponent } from './Views/remarks/remarks.component';
 import { GraphicCardActivitiesComponent } from './components/graphic-card-activities/graphic-card-activities.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MatSnackBarModule} from '@angular/material/snack-bar';
+import{MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -57,7 +60,10 @@ import { GraphicCardActivitiesComponent } from './components/graphic-card-activi
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
