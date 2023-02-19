@@ -39,6 +39,27 @@ class EmployeeRepository extends ServiceEntityRepository
         }
     }
 
+    public function login(array $data)
+    {
+        $employee = $this->find($data['EMAIL']);
+        $employee_pass = $employee->getPassword();
+        $pass = $data['PASS'];
+
+        // $employeeArray[] = [
+        //     'EMAIL'=>$employee->getEmail(),
+        //     'NAME' => $employee->getName(),
+        //     'PROFILE'=> $employee->getProfile(),
+        //     'IMAGE'=> $employee->getPhoto(),
+        //     'PASS'=> $employee->getPassword()
+        // ];
+
+        if($pass==$employee_pass){
+            return $employee;
+        }else{
+            return false;
+        }
+    }
+
 //    /**
 //     * @return Employee[] Returns an array of Employee objects
 //     */
