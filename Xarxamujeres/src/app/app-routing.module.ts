@@ -9,6 +9,7 @@ import { DashboardComponent } from './Views/dashboard/dashboard.component';
 import { DetailComponent } from './Views/detail/detail.component';
 import { AssociatedFormComponent } from './Views/associated-form/associated-form.component';
 import { FilesComponent} from './Views/files/files.component';
+import { RemarksComponent} from './Views/remarks/remarks.component';
 import { GraphicCardActivitiesComponent } from './components/graphic-card-activities/graphic-card-activities.component';
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'detail', component: DetailComponent },
   { path: 'newAssociated', component: AssociatedFormComponent },
   { path: 'files', component: FilesComponent },
+  { path: 'remarks', component: RemarksComponent },
   {path: 'graphic', component:GraphicCardActivitiesComponent}
 ];
 

@@ -25,6 +25,7 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { DashboardComponent } from './Views/dashboard/dashboard.component';
 import { DetailComponent } from './Views/detail/detail.component';
 import { FilesComponent } from './Views/files/files.component';
+import { RemarksComponent } from './Views/remarks/remarks.component';
 import { GraphicCardActivitiesComponent } from './components/graphic-card-activities/graphic-card-activities.component';
 
 
@@ -47,6 +48,7 @@ import { GraphicCardActivitiesComponent } from './components/graphic-card-activi
     DashboardComponent,
     DetailComponent,
     FilesComponent,
+    RemarksComponent,
     GraphicCardActivitiesComponent,
     
   ],
