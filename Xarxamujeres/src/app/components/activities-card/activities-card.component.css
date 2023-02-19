@@ -123,10 +123,6 @@
     border-radius: 20%;
 }
 
-.category p {
-    background-color: cadetblue;
-}
-
 #list-item .info {
     display: flex;
     justify-content: center;

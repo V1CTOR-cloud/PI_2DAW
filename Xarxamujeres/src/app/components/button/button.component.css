@@ -114,26 +114,35 @@
     color: #9A62A6;
     border-radius: 5px;
     padding: 6px 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }
 
-#newAssociated2 button {
-    border: 0.5px solid #9A62A6;
+#submit button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    border: 0.5px solid #D43474;
+    color: #D43474;
+    border-radius: 10px;
+    padding: 6px 12px;
+    height: 50px;
+    width: 150px;
+    background: transparent;
+    background-image: url('https://web.archive.org/web/20160312084221im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-pink.png?1443460871');
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+#submit button:hover {
     color: white;
-    background-color: #9A62A6;
-    border-radius: 50px 50px 5px 5px;
-    padding: 6px 12px;
-    height: 50px;
-    width: 150px;
-}
-
-#newAssociated2 button:hover {
-    border: 0.5px solid #9A62A6;
-    color: #9A62A6;
-    background-color: rgba(199, 134, 219, 0.4);
-    border-radius: 50px 50px 5px 5px;
-    padding: 6px 12px;
-    height: 50px;
-    width: 150px;
+    background-position: center;
 }
 
 #filter .dropdown,

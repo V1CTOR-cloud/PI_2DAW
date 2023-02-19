@@ -11,14 +11,14 @@
                 </div>
                 <div class="row pb-3">
                     <div class="col-9">
-                        <form  (ngSubmit)="onSubmit()" method="post" action="#" >
+                        <form (ngSubmit)="onSubmit()" method="post" action="#">
                             <div class="mb-3">
                                 <label for="Title" class="form-label">Título</label>
                                 <input [(ngModel)]="Title" type="text" class="form-control" id="Title">
-                              </div>
+                            </div>
                             <div class="mb-3">
-                              <label for="Author" class="form-label">Autor</label>
-                              <select [(ngModel)]="Author" class="form-select" id="Author">
+                                <label for="Author" class="form-label">Autor</label>
+                                <select [(ngModel)]="Author" class="form-select" id="Author">
                                 <option [value]="item.EMAIL" *ngFor="let item of lista">{{item.NAME}}</option>
                               </select>
                             </div>
@@ -26,9 +26,9 @@
                                 <label for="Desc" class="form-label">Comentario</label>
                                 <!-- <input [(ngModel)]="Desc" type="text" class="form-control" id="Desc"> -->
                                 <textarea [(ngModel)]="Desc" id="Desc" cols="30" rows="10" class="form-control"></textarea>
-                              </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </form>
+                            </div>
+                            <app-button [type]=" 'submit' "></app-button>
+                        </form>
                     </div>
                 </div>
             </div>

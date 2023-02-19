@@ -20,7 +20,12 @@ export class AssociatedFormComponent {
     @Input() PC: string = "";
     @Input() city: string = "";
     @Input() province: string = "";
+    @Input() mail: string = "";
+    @Input() DT: string = "";
+    @Input() DD: string = "";
+    @Input() FA: string = "";
     @Input() BD: string = "";
+    @Input() phone: string = "";
 
     constructor(private http: HttpClient, public service: DataService, private router: Router, public snackBar: MatSnackBar) { }
 
@@ -34,12 +39,16 @@ export class AssociatedFormComponent {
       const json = {
         'DATE': localDate, 
         'NAME': this.nameSurname,
+        'PHONE': this.phone,
         'PC': this.PC,
         'LOC': this.city,
         'PROV': this.province,
         'BD': localBDate,
-        'DD': 0,
-        'DT': "ninguna"
+        'MAIL' : this.mail,
+        'DD': this.DD,
+        'DT': this.DT,
+        'FC': this.FA
+
       }
 
       this.newAssociated(json);
