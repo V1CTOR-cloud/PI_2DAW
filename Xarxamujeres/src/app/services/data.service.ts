@@ -26,6 +26,10 @@ export class DataService {
     return this.http.get<Associated>(this.urlAssociated);
   }
 
+  newAssociated(body:any):Observable<Associated>{
+    return this.http.post<Associated>((this.urlAssociated+'insert'),body);
+  }
+
   // getGames(id: string):Observable<Games>{
   //   return this.http.get<Games>(this.gamesUrl + `${id}`);
   // }

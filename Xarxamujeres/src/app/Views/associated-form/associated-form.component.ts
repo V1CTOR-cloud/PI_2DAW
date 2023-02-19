@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {NgForm} from '@angular/forms';
+import { DataService } from 'src/app/services/data.service';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 
 @Component({
@@ -20,25 +20,27 @@ export class AssociatedFormComponent {
     @Input() province: string = "";
     @Input() BD: string = "";
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient, public service: DataService) { }
 
     public onSubmit(){
       let localDate = this.strToTS(this.date);
       let localBDate = this.strToTS(this.BD);
       let tsD = new Date(localDate*1000);
       let tsBD = new Date(localBDate*1000);
-      console.log(tsD);
+      console.log(localDate);
 
       const json = {
-        'DATE': tsD, 
+        'DATE': localDate, 
         'NAME': this.nameSurname,
         'PC': this.PC,
         'LOC': this.city,
         'PROV': this.province,
-        'BD': tsBD,
+        'BD': localBDate,
         'DD': 0,
-        'Dt': "ninguna"
+        'DT': "ninguna"
       }
+
+      this.newAssociated(json);
 
     }
 
@@ -47,7 +49,10 @@ export class AssociatedFormComponent {
         return dt / 1000;
     }
 
-    
+    public newAssociated(json:any): void {
+      this.service.newAssociated(json).subscribe((response) => {console.log(response);
+      });
+    }
 
     //  filedata:any;
 
